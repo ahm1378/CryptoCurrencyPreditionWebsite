@@ -1,0 +1,25 @@
+.tv-symbol-header__first-line, .tv-symbol-header__second-line {
+    text-transform: uppercase;
+}
+.tv-symbol-header__first-line {
+    color: #131722;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    margin-right: 8px;
+}
+.tv-symbol-price-quote__sub-line {
+    color: #787b86;
+    display: block;
+    font-size: 11px;
+    letter-spacing: .4px;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.tv-symbol-price-quote__row {
+    height: 30px;
+    margin-bottom: 12px;
+    white-space: nowrap;
+}

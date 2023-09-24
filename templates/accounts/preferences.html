@@ -1,0 +1,102 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        {% include 'left_navbar1.html' %}
+        <div class="col py-3 bg-light">
+            <div class="row bg-white container-fluid">
+                <p style="visibility:hidden;">asd</p>
+                <h2>Preferences</h2>
+                <p style="visibility:hidden;">asd</p>
+            </div>
+            <br>
+            <div class="card container-fluid">
+                <div class="card-header bg-white"><h6>Order Confirmation</h6></div>
+                <div class="card-body">
+                    <p class="card-subtitle text-gray">If the order reminder function is enabled, it will need to be
+                        reconfirmed every time an order is submitted.</p>
+                    <br>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Limit Order</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault2">
+                        <label class="form-check-label" for="flexSwitchCheckDefault2">Market Order</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Stop-Limit Order</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked2" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked2">Auto Borrow/Repay for
+                            Margin</label>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="card container-fluid">
+                <div class="card-header bg-white"><h6>Notifications</h6></div>
+                <div class="card-header bg-white">
+                    <div class="row">
+                        <div class="col-3">
+                            <h6>Notification Language</h6>
+                            <p class=" card-subtitle text-gray">This will affect the language settings of E-mail and App
+                                push.</p>
+                        </div>
+                        <div class="col-8"></div>
+                        <div class="col-1">
+                            <select class="form-select bg-light">
+                                <option class="selected">English</option>
+                                <option value="1">فارسی</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h6>On-site notifications</h6>
+                    <p class="card-subtitle text-gray">Once enabled, you will receive relevant notifications within the
+                        app and website.</p>
+                    <br>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked3" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked3">Activities</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked4" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked4">Trade Notification</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked5" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked5">Binance News</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked6" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked6">System Messages</label>
+                    </div>
+
+                </div>
+                <div class="card-footer bg-white">
+                    <h6>Email Push</h6>
+                    <p class="card-subtitle text-gray">You can set here to refuse to receive marketing promotion
+                        emails.</p>
+                    <br>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked7" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked7">
+                            Promotion
+                            <p class="text-muted">Binance will send out promotional information related to marketing
+                                activities via email from time to time.</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,227 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row bg-dark">
+
+    <h3 class="text-center" style="color: white; line-height: 4;">Convert & OTC Portal</h3>
+    <p class="text-center"><i class="bi-percent icon-green"></i> <span class="text-white"> Zero fee </span> <i
+            class="bi-patch-exclamation icon-green"></i> <span class="text-white"> No slippage </span> <i
+            class="bi-link-45deg icon-green"></i> <span class="text-white"> More cross points</span></p>
+    <br><br><br>
+</div>
+    <div class="row bg-white d-flex justify-content-center ">
+    <div class="col-3">
+        <br><br><br>
+        <label for="basic-url" class="form-label">From</label>
+        <div class="input-group mb-3">
+            <div class="col-9">
+                <input type="text" class="form-control" id="basic-url" placeholder="Please enter 20-2500000">
+            </div>
+            <div class="col-3 ps-1">
+                <select class="form-select form-select-sm">
+                    <option selected>USDT</option>
+                    <option value="1">BTC</option>
+                    <option value="2">ETH</option>
+                </select>
+            </div>
+        </div>
+
+        <h4 style="text-align: center;"><i class="bi-arrow-down-up icon-gray"></i></h4>
+
+        <label for="basic-url" class="form-label">To</label>
+        <div class="input-group mb-3">
+            <div class="col-9">
+                <input type="text" class="form-control" id="basic-url1" placeholder="Please enter 20-2500000">
+            </div>
+            <div class="col-3 ps-1">
+                <select class="form-select form-select-sm">
+                    <option selected>BTC</option>
+                    <option value="1">USDT</option>
+                    <option value="2">ETH</option>
+                </select>
+            </div>
+        </div>
+        <br><br>
+        <div class="d-grid gap-2">
+            <button class="btn btn-warning btn-lg" type="button">Preview Conversion</button>
+            <br><br><br>
+        </div>
+    </div>
+
+</div>
+    <div class="row bg-white d-flex justify-content-center">
+
+    <div class="col-6">
+        <h2>FAQ</h2>
+        <br><br>
+    </div>
+</div>
+    <div class="row bg-white d-flex justify-content-center">
+    <div class="col-3">
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1. What are the requirements to use the portal?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                        All functions of the portal (checking indicative prices / confirming trades) will be available
+                        when you log-in to your Binance account. Please note that standard exchange withdrawal limits
+                        apply. If you are using an account without KYC verification, the 2 BTC withdrawal limit per 24
+                        hours will apply.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2. What are the benefits of using the crypto converter portal?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                    <div class="accordion-body">
+                        Users can easily convert their assets on the portal without having to worry about complicated
+                        matters such as the order book and trading fees. You can find out about the <a href="#"
+                                                                                                       style="text-decoration: underline; color: darkgoldenrod;">Benefits
+                        of conducting larger OTC crypto trade size</a> (generally 10,000 USDT equivalent or higher)
+                        trades on the portal. Start by registering an account today to find out more!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3. What are the minimum and maximum trade amounts?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                        The minimum trade amount is generally an equivalent value of 10 USDT worth of coins. Minimum and
+                        maximum trade amounts will be dependent on the coin / pair and can be previewed before entering
+                        in a trade amount.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        4. How does settlement work?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                    <div class="accordion-body">
+                        Trades are settled directly to your Binance account’s spot wallet. Settlement will usually occur
+                        immediately after you confirm a trade.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        5. How do I make deposits and withdrawals for OTC trades?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                    <div class="accordion-body">
+                        There is no separate wallet for OTC trades. Simply make deposits and withdrawals to / from your
+                        account’s spot wallet.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-3">
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                        6. Are there any trading fees?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
+                    <div class="accordion-body">
+                        We do not charge any fees on OTC trades. However, there will be a spread (if you are buying, our
+                        prices will be above the market price. If you are selling, our price will be below the market
+                        price).
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        7. I received an “insufficient funds” error?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
+                    <div class="accordion-body">
+                        To confirm an OTC trade, you must have the required amount of coins that you are selling in your
+                        account. For example, if you want to buy 10 BTC with USDT and the price per BTC is 10,000 USDT,
+                        then you must have at least 100,000 USDT in your account to confirm the trade.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        8. Where can I check my trade history?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight">
+                    <div class="accordion-body">
+                        Log into your account and go to <a href="#"
+                                                           style="text-decoration: underline; color: darkgoldenrod;">
+                        Convert history</a>.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        9. Can I confirm trades on credit (without coins in my Binance spot wallet)?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine">
+                    <div class="accordion-body">
+                        No, you must have the required amount of coins for the trade in your Binance spot wallet (not
+                        margin or futures wallets).
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        10. Why are there old tickers (LEND, ADXOLD, etc)?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen">
+                    <div class="accordion-body">
+                        The portal allows users to convert “old” versions of tokens to new versions that, for example,
+                        may have resulted from project teams implementing a token swap. The old versions can only be
+                        traded into the new versions.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</div>
+</div>
+<hr>
+{% endblock %}

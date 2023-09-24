@@ -1,0 +1,447 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+{% if user.is_authenticated %}
+<div class="container-fluid">
+    <div class="row" style="height: auto;">
+        <div class="col-md-5" style="background-color: #3d3d3d;">
+            <h2 style="margin-top: 10px; margin-left: 10%; color: white; font-size: 50px;">Invite Friends.</h2>
+            <h2 style="margin-top: 10px; margin-left: 10%; color: white; font-size: 50px;">Earn Crypto Together</h2>
+            <h6 style="margin-left: 10%; margin-top: 25px; color: #737373">Earn up to <b style="color: white;">40%
+                commission</b> every time your friends make a trade on Binance</h6>
+            <button type="button" class="btn btn-warning"
+                    style="text-decoration: none; margin-top: 2%; margin-left: 10%;"><a href="#"
+                                                                                        style="text-decoration: none; color: black;">Invite
+                now</a></button>
+            <button type="button" class="btn btn-warning "
+                    style="text-decoration: none; margin-top: 2%; margin-left: 2%;"><a href="#"
+                                                                                       style="text-decoration: none; color: black;">Detailed
+                rules</a></button>
+            <div style="height: 20px;"></div>
+        </div>
+
+        <div class="col-md-7" style="background-color: #3d3d3d;">
+            <div class="col py-3 bg-dark" style="height: auto; margin-top: 2%; margin-bottom: 2%;">
+                <div class="row">
+                    <div class="col" style="margin-left: 10%;">
+                        <p style="color: #bfbfbf">Default Referral ID</p>
+                    </div>
+                    <div class="col">
+                        <a href="#" style="text-decoration: none;"><p class="text-warning">+ Generate your link</p></a>
+                    </div>
+                </div>
+                <h3 style="color: white; margin-left: 10%;">Backend</h3>
+
+                <div class="row" style="margin-top: 45px;">
+                    <div class="col" style="margin-left: 10%;">
+                        <p style="color: #bfbfbf">Default Link</p>
+                    </div>
+                </div>
+                <h3 style="color: white; margin-left: 10%;">Backend</h3>
+
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col" style="margin-left: 10%;">
+                        <p style="color: #bfbfbf">Note(backend) - <a href="#"
+                                                                     style="color: #ffcb59; text-decoration: none;">edit</a>
+                        </p>
+                    </div>
+                </div>
+                <div style="background-color: #303030; height: auto; margin-left: 10%; margin-right: 10%;">
+                    <div class="row">
+                        <div class="col" style="margin-top: 15px; margin-left: 15px;">
+                            <p style="color: #bfbfbf; font-size: 15px;">You Recieve</p>
+                            <h3 style="color: white; font-size: 20px;">20% (Backend)</h3>
+                        </div>
+
+                        <div class="col" style="margin-top: 15px; margin-left: 15px; margin-right: 50px;">
+                            <p style="color: #bfbfbf; font-size: 15px;">Friends Recieve</p>
+                            <h3 style="color: white; font-size: 20px;">0% (Backend)</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class=" row flex-nowrap">
+        <div class="col py-3" style="background-color: #e8e8e8;">
+
+            <div style="background-color: #ebe0bc; height: auto; margin-right: 0%;">
+                <div class="row">
+                    <div class="col-10 py-3" style="margin-top: 1%; margin-left: 2%;">
+                        <h6><small>You are required to complete Intermediate Verification to access Binance services.
+                            Plus, verify now and get a 500 BUSD Savings Trial Fund Voucher.<a href="#"
+                                                                                              style="margin-left: 10px; color: #cc9c35">Learn
+                                more</a></small></h6>
+                    </div>
+                    <div class="col py-3" style="margin-top: 0%;">
+                        <button type="button" class="btn btn-outline-warning"
+                                style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                    style="text-decoration: none; color: black">Verify</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <h1 style="margin-top: 5%; margin-left: 4%;">Dashboard</h1>
+
+            <div style="margin-top: 25px;">
+                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                <label class="btn btn-light btn-sm" for="option1" style="margin-left: 4%;">All Accounts</label>
+
+                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option2" style="margin-left: 0.5%">Spot</label>
+
+                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option3" style="margin-left: 0.5%">Futures</label>
+
+                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option4" style="margin-left: 0.5%;">Mining</label>
+            </div>
+
+            <hr style="margin-left: 4%; margin-right: 4%;">
+
+            <div style="margin-left: 4%">
+                <input type="radio" class="btn-check" name="options-2" id="option5" autocomplete="off" checked>
+                <label class="btn btn-warning btn-sm" for="option5" style="margin-left: 0%">All</label>
+
+                <input type="radio" class="btn-check" name="options-2" id="option6" autocomplete="off">
+                <label class="btn btn-warning btn-sm" for="option6" style="margin-left: 0%">Yesterday</label>
+
+                <input type="radio" class="btn-check" name="options-2" id="option7" autocomplete="off">
+                <label class="btn btn-warning btn-sm" for="option7" style="margin-left: 0%">This Week</label>
+
+                <input type="radio" class="btn-check" name="options-2" id="option8" autocomplete="off">
+                <label class="btn btn-warning btn-sm" for="option8" style="margin-left: 0%">This Month </label>
+            </div>
+
+            <div style="background-color: #ebe0bc; height: auto; margin-left: 4%; margin-right: 4%; margin-top: 2%;"
+                 class="row">
+                <div class="row">
+                    <div class="col" style="margin-left: auto; margin-top: auto;">
+                        <p>You Earned</p>
+                        <h4>0(backend)</h4>
+                    </div>
+                    <div class="col" style="margin-top: 2%">
+                        <p>Total Number of Traded Friends</p>
+                        <h4>0(Backend)</h4>
+                    </div>
+                    <div class="col" style="margin-top: 2%">
+                        <p>Total Numbers of Friends</p>
+                        <h4>0(Backend)</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="col" style="margin-top: 2%; margin-left: auto;">Your Ranking <a href="#"
+                                                                                              style="background-color: #ffcd61; color: #cc8533; text-decoration: none;">Ranking
+                        List ></a></p>
+                    <h4 style="margin-left: auto; margin-bottom: 2%;">--(Backend)</h4>
+                </div>
+            </div>
+
+            <div style="margin-left: 4%; margin-right: 4%;">
+                <p style="font-size: 13px;">
+                    * Data update time refers to UTC + 0 time zone. The data maintenance time is 3am - 5am (UTC+0) every
+                    day. During this period, the calculation of today's data is based on the assets of previous day.
+                    After maintenance, all data will be displayed properly
+                </p>
+                <p style="font-size: 13px;">
+                    * Statement: due to the complexity of financial data, there might be nuances and delay. Data
+                    displayed above is for reference only. We sincerely apologize for any inconvenience.
+                </p>
+            </div>
+
+            <hr style="margin-left: 4%; margin-right: 4%; margin-top: 13%;">
+            <h1 style="margin-left: 4%;">Your Referral Links List</h1>
+
+            <p style="margin-left: 4%; margin-top: 2%;">Remaining number of promotional links to be created: 19
+                (Backend)
+                <a href="#" style="color: #cc9c35; text-decoration: none; margin-left: 2%;">+ Generate your link</a>
+            </p>
+
+            <!-- <a href="#" style="color: #cc9c35; text-decoration: none; margin-left: 4%;">+ Generate your link</a> -->
+
+
+            <div class="row"
+                 style="background-color: #d4d4d4; height: auto; margin-left: 4%; margin-right: 4%; margin-top: 20px;">
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col">
+                        <p style="font-size: 13px">Referral ID</p>
+                        <hr style="margin-bottom: auto;">
+                        <p style="font-size: 13px;">ID(backend)</p>
+                    </div>
+                    <div class="col">
+                        <p style="font-size: 13px;">You/Friends</p>
+                        <hr style="margin-bottom: auto;">
+                        <p style="font-size: 13px;">20% / 0% (backend)</p>
+                    </div>
+                    <div class="col">
+                        <p style="font-size: 13px">Note</p>
+                        <hr style="margin-bottom: auto;">
+                        <p style="font-size: 13px;">---</p>
+                    </div>
+                    <div class="col">
+                        <p style="font-size: 13px">Friends</p>
+                        <hr style="margin-bottom: auto;">
+                        <p style="font-size: 13px"><a href="#"
+                                                      style="color: #c7a124; text-decoration: none; font-size: 13px"><b><
+                            List ></b></a> 0 (backend)</p>
+                    </div>
+                    <div class="col">
+                        <p style="font-size: 13px">Action</p>
+                        <hr style="margin-bottom: auto;">
+                        <p><a href="#" style="color: #c7a124; font-size: 13px; text-decoration: none;"><b>Copy link</b></a>
+                            - <a href="#"
+                                 style="color: #c7a124; font-size: 13px; text-decoration: none;"><b>Edit</b></a> - <a
+                                    href="#"
+                                    style="color: #c7a124; font-size: 13px; text-decoration: none;"><b>Invite</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: right; margin-right: 4%; margin-top: 1%;">
+                <a href="#" style="color: #c7a124; text-decoration: none;"><b><<</b></a>
+                <button class="btn btn-light">1</button>
+                <a href="#" style="color: #c7a124; text-decoration: none;"><b>>></b></a>
+            </div>
+
+            <hr style="margin-top: 11%; margin-left: 4%; margin-right: 4%;">
+            <h1 style="margin-top: 0%; margin-left: 4%;">Friends List <a href="#"
+                                                                         style="color: #c7a124; text-decoration: none; font-size: 15px; margin-left: 1%;"><b><<
+                View Chart >></b></a></h1>
+
+            <div style="margin-top: 25px;">
+                <input type="radio" class="btn-check" name="options" id="option9" autocomplete="off" checked>
+                <label class="btn btn-light btn-sm" for="option9" style="margin-left: 4%;">All Accounts</label>
+
+                <input type="radio" class="btn-check" name="options" id="option10" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option10" style="margin-left: 0.5%">Spot</label>
+
+                <input type="radio" class="btn-check" name="options" id="option11" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option11" style="margin-left: 0.5%">Futures</label>
+
+                <input type="radio" class="btn-check" name="options" id="option12" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option12" style="margin-left: 0.5%;">Mining</label>
+            </div>
+            <hr style="margin-top: 20px; margin-left: 4%; margin-right: 4%">
+            <p style="margin-left: 4%; margin-right: 4%;">All friends data as of 0:00 UTC today is displayed, and will
+                be updated between 3:00 - 5:00 (UTC+0) today, excluding Mining Pool. Please click the "Export" button to
+                download detailed data.<a href="#" style="color: #c7a124; margin-left: 1%; text-decoration: none;">Export
+                    complete history</a></p>
+
+            <div style="height: auto; background-color: #d6d6d6; margin-top: 30px; margin-left: 4%; margin-right: 4%;"
+                 class="row">
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Account Type</h6>
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Friend's User ID</h6>
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Referral Bonus Earned (BTC)</h6>
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Traded</h6>
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Registration Time <a href="#" style="color: #c7a124; text-decoration: none;;"><< >> </a></h6>
+            </div>
+
+            <img src="{% static '/assets/img/info.png' %}"
+                 style="display: block; margin-left: auto; margin-right: auto; width: 150px; margin-top: 2%;">
+            <p style="text-align: center;">No Data.</p>
+
+            <hr style="margin-top: 7%; margin-left: 4%; margin-right: 4%;">
+            <h1 style="margin-left: 4%;">Commission History<a href="#"
+                                                              style="color: #c7a124; text-decoration: none; font-size: 15px; margin-left: 1%;"><b><<
+                View Chart >></b></a></h1>
+
+            <div style="background-color: #ebe0bc; height: auto; margin-left: 4%; margin-right: 4%">
+                <h6 style="font-size: 14px; margin-left: 4%; margin-right: 4%; margin-top: 3%; margin-bottom: 3%; text-align: left">
+                    Your referral commission will be credited to your wallet balance within the next 72 hours. If you do
+                    not receive your commission within 72 hours, please contact our online support center for further
+                    assistance.</h6>
+            </div>
+
+            <div style="margin-top: 25px;">
+                <input type="radio" class="btn-check" name="options" id="option18" autocomplete="off" checked="">
+                <label class="btn btn-light btn-sm" for="option18" style="margin-left: 4%;">All Accounts</label>
+
+                <input type="radio" class="btn-check" name="options" id="option19" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option19" style="margin-left: 0.5%;">Spot (Margin
+                    Included)</label>
+
+                <input type="radio" class="btn-check" name="options" id="option20" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option20" style="margin-left: 0.5%;">Futures</label>
+
+                <input type="radio" class="btn-check" name="options" id="option21" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option21" style="margin-left: 0.5%;;">Mining</label>
+            </div>
+
+            <hr style="margin-top: 20px; margin-bottom: 20px; margin-left: 4%; margin-right: 4%;">
+
+            <p style="margin-left: 4%; margin-right: 4%; margin-top: 2%;">Show only the last 7 days of records (click
+                the right-hand export button for all records) <a href="#"
+                                                                 style="text-decoration: none; color: #c7a124; margin-left: 1%;">Export
+                    complete history</a></p>
+
+            <div style="height: auto; background-color: #d6d6d6; margin-top: 30px; margin-left: 4%; margin-right: 4%;"
+                 class="row">
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Order Type</h6>
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Friend's User ID </h6>
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Commission Earned </h6>
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Friend's Trade Date </h6>
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Commission Time </h6>
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Distribution Status</h6>
+            </div>
+
+            <img src="{% static '/assets/img/info.png' %}"
+                 style="display: block; margin-left: auto; margin-right: auto; width: 150px; margin-top: 2%;">
+            <p style="text-align: center;">No Data.</p>
+
+
+            <hr style="margin-left: 4%; margin-right: 4%; margin-top: 7%;">
+            <h1 style="margin-left: 4%;">Commission Fees Shared With You<a href="#"
+                                                                           style="color: #c7a124; text-decoration: none; font-size: 15px; margin-left: 1%;"><b><<
+                View Chart >></b></a></h1>
+
+            <div style="margin-top: 25px;">
+                <input type="radio" class="btn-check" name="options" id="option13" autocomplete="off" checked="">
+                <label class="btn btn-light btn-sm" for="option13" style="margin-left: 4%;">All Accounts</label>
+
+                <input type="radio" class="btn-check" name="options" id="option14" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option14" style="margin-left: 0.5%;">Spot</label>
+
+                <input type="radio" class="btn-check" name="options" id="option15" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option15" style="margin-left: 0.5%;;">Margin</label>
+
+                <input type="radio" class="btn-check" name="options" id="option16" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option16" style="margin-left: 0.5%;">Futures</label>
+
+                <input type="radio" class="btn-check" name="options" id="option17" autocomplete="off">
+                <label class="btn btn-light btn-sm" for="option17" style="margin-left: 0.5%;;">Mining</label>
+            </div>
+
+            <hr style="margin-top: 20px; margin-bottom: 20px; margin-left: 4%; margin-right: 4%;">
+
+            <p style="margin-left: 4%; margin-right: 4%; margin-top: 2%;">Show only the last 7 days of records (click
+                the right-hand export button for all records) <a href="#"
+                                                                 style="text-decoration: none; color: #c7a124; margin-left: 1%;">Export
+                    complete history</a></p>
+
+            <div style="height: auto; background-color: #d6d6d6; margin-top: 30px; margin-left: 4%; margin-right: 4%;"
+                 class="row">
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Commission Fees</h6>
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Friend's Trade Date</h6>
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Time</h6>
+                <h6 class="col"
+                    style="font-size: auto; color: #616161; margin-top: 15px; margin-bottom: 15px; font-size: 13px;">
+                    Distribution Status</h6>
+            </div>
+
+            <img src="{% static '/assets/img/info.png' %}"
+                 style="display: block; margin-left: auto; margin-right: auto; width: 150px; margin-top: 2%;">
+            <p style="text-align: center; margin-bottom: 5%;">No Data.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row flex-nowrap" style="background-color: black">
+        <div class="col" style="margin-bottom: 2%; margin-top: 2%; text-align: center;">
+            <div>
+                <h2 style="color: white">Binance Affiliate Program</h2>
+            </div>
+            <div style="margin-top: 2%;">
+                <button class="btn btn-warning"><a href="#" style="color: black; text-decoration: none;">Join Now</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="container-fluid">
+    <div class="row" style="height: auto;">
+        <div class="col py-3" style="background-color: #3d3d3d;">
+            <h2 style="margin-top: 10px; margin-left: 10%; color: white; font-size: 50px;">Invite Friends.</h2>
+            <h2 style="margin-top: 10px; margin-left: 10%; color: white; font-size: 50px;">Earn Crypto Together</h2>
+            <h6 style="margin-left: 10%; margin-top: 25px; color: #737373">Earn up to <b style="color: white;">40%
+                commission</b> every time your friends make a trade on Binance</h6>
+            <button type="button" class="btn btn-warning"
+                    style="text-decoration: none; margin-top: 2%; margin-left: 10%;"><a href="#"
+                                                                                        style="text-decoration: none; color: black;">Invite
+                now</a></button>
+            <button type="button" class="btn btn-warning "
+                    style="text-decoration: none; margin-top: 2%; margin-left: 2%;"><a href="#"
+                                                                                       style="text-decoration: none; color: black;">Detailed
+                rules</a></button>
+            <div style="height: 20px;"></div>
+        </div>
+
+        <div class="col py-3" style="background-color: #3d3d3d;">
+            <img src="{% static '/assets/img/bitcoin-btc-logo.svg' %}"
+                 style="display: block; margin-left: auto; margin-right: auto; width: 150px; margin-top: 7%;">
+            <div style="height: 20px;"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class=" row flex-nowrap">
+        <div class="col py-3" style="background-color: #e8e8e8;">
+
+            <div class="row" style="background-color: white; margin-left: 10%; margin-right: 10%; height: auto;">
+                <h3 style="margin-left: 4%; margin-top: 2%; margin-bottom: 2%;">How to invite your friends</h3>
+                <div class="col" style="margin-left: 4%;">
+                    <h1>1</h1>
+                    <h6>Get Link</h6>
+                    <p>Register and generate referral links and QR codes with a commission kickback rate.</p>
+                </div>
+                <div class="col" style="margin-left: 10%;">
+                    <h1>2</h1>
+                    <h6>Invite Friends</h6>
+                    <p>Invite your friends to register through the referral link or QR and get rewards when they
+                        complete trade every time.</p>
+                </div>
+                <div class="col" style="margin-right: 4%; margin-left: 10%;">
+                    <h1>3</h1>
+                    <h6>Earn Crypto</h6>
+                    <p>Every time your friends make a trade, you'll share up to 40% commission in real time!</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 4%; margin-bottom: 3%;">
+                <h5 style="text-align: center;">Login to check <a href="/login"
+                                                                  style="text-decoration: none; color: #e8b200">Login
+                    now></a></h5>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row d-flex flex-wrap">
+        {% include 'left_navbar2.html' %}
+
+        <div class="col py-3">
+            <div class="bg-light container-fluid py-3">
+                <div class="row">
+
+                    <div class="col-4 d-flex justify-content-start">
+                        <h2>Pool</h2>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-6 d-flex justify-content-start">
+                        <p class="text-gray" >Balance:
+                            <button class="btn-sm btn-light"><i class="bi-eye-slash-fill"></i>Show</button>
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p>Coin</p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-start">
+                        <h3>******** BTC</h3>
+
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <input type="text" name="" id="" placeholder="Search Coin" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container-fluid bg-white">
+                <br>
+                <div class="row">
+                    <p style="font-size: large; line-height:0.1;">Balance</p>
+                    <hr>
+                </div>
+                <table id="coinTable" class="table table-hover" style="width:100%">
+                    <thead>
+                    <tr>
+                        <th>Coin</th>
+                        <th>Total Balance</th>
+                        <th>Available Balance</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

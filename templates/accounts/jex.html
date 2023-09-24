@@ -1,0 +1,94 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row d-flex flex-wrap">
+        {% include 'left_navbar2.html' %}
+        <div class="col py-3 bg-white container-fluid justify-content-center">
+            <div class="container-fluid justify-content-center">
+                <h2 class="text-center">Transfer</h2>
+                <br>
+
+                <div class="card col-8 d-flex container justify-content-center">
+                    <div class="card-header bg-white">
+                        <br>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>Transfer to JEX</h6>
+                            </div>
+                            <div class="col-4">
+                                <p style="visibility:hidden; font-size: smaller;">asd</p>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" style="text-decoration: underline; color: darkgoldenrod;">Transfer
+                                    history</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <p class="text-gray">From</p>
+                                <select class="form-select" disabled>
+                                    <option class="text-gray" selected> Spot Wallet</option>
+                                </select>
+                            </div>
+
+                            <div class="col-2 ">
+                                <br><br>
+                                <h4 style="text-align: center;"><i class="bi bi-arrow-right-circle icon-yellow"
+                                                                   style="width: 20; height: 20;"></i></h4>
+                            </div>
+                            <div class="col-5">
+                                <p class="text-gray">To</p>
+                                <select class="form-select" disabled>
+                                    <option class="text-gray" selected> JEX Wallet</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="text-gray">Coin</p>
+                            <select class="form-select">
+                                <option class="text-gray" selected>USDT TetherUS</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <p class="text-gray">Amount</p>
+                            <input type="text" class="form-control">
+                            <p class="text-gray">24h Withdraw Limit: <span class="text-yellow">0 </span> <span
+                                    class="text-black">/ 10000 USDT</span></p>
+                            <div class="col-3 text-center">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-light rounded-pill" type="submit">25%</button>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-light rounded-pill" type="submit">50%</button>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-light rounded-pill" type="submit">75%</button>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-light rounded-pill" type="submit">100%</button>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-warning" type="button">Connect JEX</button>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

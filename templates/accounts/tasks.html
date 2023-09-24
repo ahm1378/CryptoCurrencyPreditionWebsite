@@ -1,0 +1,38 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        {% include 'left_navbar1.html' %}
+
+        <div class="col py-3 bg-light">
+            <h2 style="margin-top: 10px; margin-left: 20px">Task Center</h2>
+
+            <hr style="margin-left: 20px">
+            <div style="background-color: #ebe0bc; height: auto;">
+                <div class="row">
+                    <div class="col-10 py-3" style="margin-top: 1%; margin-left: 2%;">
+                        <h6><small>You are required to complete Intermediate Verification to access Binance services.
+                            Plus, verify now and get a 500 BUSD Savings Trial Fund Voucher.<a href="#"
+                                                                                              style="margin-left: 10px; color: #cc9c35">Learn
+                                more</a></small></h6>
+                    </div>
+                    <div class="col py-3" style="margin-top: 0%;">
+                        <button type="button" class="btn btn-outline-warning"
+                                style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                    style="text-decoration: none; color: black">Verify</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <img src="{% static '/assets/img/info.png' %}"
+                 style="display: block; margin-left: auto; margin-right: auto; width: 150px; margin-top: 10%;">
+            <div style="text-align: center;">
+                <p style="font-size: 15px; color: #525252">No Task Yet.</p>
+                <p style="font-size: 15px; margin-top: -10px; color: #525252">Stay tuned for more tasks</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

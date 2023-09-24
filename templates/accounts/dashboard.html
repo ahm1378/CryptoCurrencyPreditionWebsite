@@ -1,0 +1,143 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        {% include 'left_navbar1.html' %}
+
+        <div class="col py-3 bg-light">
+            <div class="row">
+                <div class=" ccol-xs-12 col-sm-9">
+                    <div class="card p-1 bg-white" id="">
+                        <div class="card-header container-fluid bg-white">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h5 class="w-75 p-3">Balance Details</h5>
+                                </div>
+                                <div class="col-md-2 float-right">
+                                    <button class="btn btn-warning">Deposit</button>
+                                    <button class="btn btn-light" style="margin-left: 1em">Withdraw</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title text-gray fw-bold text-decoration-none">Account Balance:</p>
+                            <p class="card-text">0.0000000 BTC</p>
+                            <br>
+                            <p class="card-text text-gray">Estimated Value:</p>
+                            <p class="card-text">$0.00</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <div class="card p-1 bg-white" id="">
+                        <div class="card-header container-fluid bg-white">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h6 class="w-75 p-3">Announcements</h6>
+                                </div>
+                                <div class="col-md-2 float-right">
+                                    <i class="fs-4 bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">No announcements for now</p>
+                        </div>
+                    </div>
+
+                    <div class="card p-1 bg-white" id="">
+                        <div class="card-header container-fluid bg-white">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h6 class="w-75 p-3">Task Center</h6>
+                                </div>
+                                <div class="col-md-2 float-right">
+                                    <i class="fs-4 bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">No tasks available</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class=" ccol-xs-12 col-sm-6">
+
+                    <div class="card p-1 bg-white" id="">
+                        <div class="card-header container-fluid bg-white">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h5 class="w-75 p-3">Open Orders</h5>
+                                </div>
+                                <div class="col-md-2 float-right">
+                                    <i class="fs-4 bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="text-gray">Pair</th>
+                                    <th class="text-gray">Type/Side</th>
+                                    <th class="text-gray">Price</th>
+                                    <th class="text-gray">Total</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

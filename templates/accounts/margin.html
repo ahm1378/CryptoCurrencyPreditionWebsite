@@ -1,0 +1,420 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row d-flex flex-wrap">
+        {% include 'left_navbar2.html' %}
+        <div class="col py-3 container-fluid" style="background-color: #e8e8e8;">
+            <div class="row bg-light" style="margin-top: -1.1%;">
+
+                <div class="col-sm-2" style="margin-top: 1%; margin-bottom: 1%; margin-right: 3%;">
+                    <h2>Margin</h2>
+                </div>
+
+                <div class="col-sm-4" style="margin-top: 1.2%; margin-left: 0%;">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked
+                               style="border-color: black">
+                        <label class="btn btn-outline-warning" for="btnradio2"
+                               style="margin-right: 20px; color: black; border-color: black;">Cross</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                               style="border-color: black">
+                        <label class="btn-link" for="btnradio1"
+                               style="margin-right: 20px; margin-top: 7px; color: black; text-decoration: none; border-color: black;">
+                            <a href="/margin-isolated" style="color: black; text-decoration: none;">Isolated</a>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-sm-4" style="margin-top: 1.2%;  margin-left: -1%;">
+                    <a class="btn btn-warning" href="#" role="button">Borrow</a>
+                    <a class="btn btn-light" href="#" role="button" style="border-color: black">Repay</a>
+                    <a class="btn btn-light" href="#" role="button" style="border-color: black">Transfer</a>
+
+                    <a href="#" style="color: #c77b00; margin-left: 10px;">Margin History</a>
+                    <a href="#" style="text-decoration: none; color: #c77b00; margin-left: 10px;">More</a>
+                </div>
+
+            </div>
+
+            <div class="bg-light" style="margin-top: 2%;">
+                <div class="row">
+                    <div class="col" style="margin-top: 2%;">
+                        <p style="margin-left: 2%;">Total balance</p>
+                        <h2 style="margin-left: 2%">0.00000000<span style="font-size: 14px">  BTC ≈ $0</span></h2>
+                    </div>
+                    <div class="col" style="margin-top: 2%;">
+                        <p style="margin-left: 2%;">Your margin level</p>
+                        <h2 style="margin-left: 2%; color: green">999.00<span style="font-size: 14px; color: green">  Low risk</span>
+                        </h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="row" style="margin-top: 1%;">
+                    <div class="col" style="margin-top: 2%;">
+                        <p style="margin-left: 3%;">Total Debt</p>
+                        <p style="margin-left: 3%"><b>0.00000000</b><span style="font-size: 14px">  BTC ≈ $0</span></p>
+                    </div>
+                    <div class="col" style="margin-top: 2%;">
+                        <p style="margin-left: 2%;">Account Equity:</p>
+                        <p style="margin-left: 2%"><b>0.00000000</b><span style="font-size: 14px">  BTC ≈ $0</span></p>
+                    </div>
+                    <div class="col" style="margin-top: 2%;">
+                        <p style="margin-left: 2%;">Profit & Loss</p>
+                        <p style="margin-left: 2%"><b>0.00000000</b><span
+                                style="font-size: 14px">  BTC(0.00%)</span><span>  <b> - $0.000000</b> BTC(0.00%)</span>
+                        </p>
+                        <a href="#" style="margin-left: 2%; color: #c77b00">View Details</a>
+                    </div>
+                </div>
+
+                <div style="margin-left: 1%; margin-top: 5%; margin-bottom: 2%;">
+                    <a class="btn btn-sm btn-warning" href="#" role="button">Funds</a>
+                    <a class="btn btn-sm btn-light" href="#" role="button">Positions</a>
+                    <hr>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col" style="margin-left: 2%;">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search Coin">
+                    </div>
+                    <select class="form-control col" style="margin-right: 5%">
+                        <option>All</option>
+                        <option>Hide low balance assets and debts</option>
+                        <option>Only show debts</option>
+                    </select>
+                </div>
+                <a href="#" style="color: #c77b00; margin-left: 2%;">Convert to BNB</a>
+                <a href="#" style="color: #c77b00; margin-left: 2%;">Borrowing History</a>
+                <div class="table-responsive">
+                    <table class="table table-hover" style="margin-top: 3%;">
+                        <thead class="thead-dark" style="background-color: #dedede;">
+                        <tr>
+                            <th scope="col">Coin</th>
+                            <th scope="col">Total balance</th>
+                            <th scope="col">Available Balance</th>
+                            <th scope="col">Borrowed</th>
+                            <th scope="col">Interest</th>
+                            <th scope="col">Equity value(BTC)</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">
+                                <span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px" alt=""></span> BTC
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> ETH
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> XRP
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> BNB
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> TRX
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> USDT
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> LINK
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> EOS
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> ADA
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> ONT
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> USDC
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> ETC
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> LTC
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> XLM
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> XMR
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> NEO
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> ATOM
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> DASH
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> ZEC
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span><img src="./assets/img/bitcoin-btc-logo.svg" width="20px"
+                                                       alt=""></span> MATIC
+                            </th>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.00000000</td>
+                            <td>0.0000 / 0.0000</td>
+                            <td><span><a href="#" style="color: #c77b00; text-decoration: none;">Transfer</a></span>
+                                <span><a href="#"
+                                         style="color: #c77b00; text-decoration: none;"> - Borrow/Repay</a></span>
+                                <a href="#" style="color: #c77b00; text-decoration: none;"> - Trade</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div style="text-align: right; margin-bottom: 10px;">
+                        <
+                        <a class="btn btn-sm btn-light" href="#" role="button" style="border-color: black">1</a>
+                        <a class="btn btn-sm btn-light" href="#" role="button" style="border-color: black">2</a>
+                        <a class="btn btn-sm btn-light" href="#" role="button" style="border-color: black">3</a>
+                        <a href="#" style="color: black; text-decoration: none;">></a>
+                    </div>
+                    <p>To read more about marginable assets, marginable pairs and the price index, please refer to <a
+                            href="#" style="color: #c77b00; text-decoration: none;">Margin Data</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

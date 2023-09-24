@@ -1,0 +1,123 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+
+<section>
+
+    <div class="row mt-4">
+        <div class="col-2"></div>
+
+
+        <div class="col-4">
+            <h3><b>Personal Verification </b><i class="bi-shield-check"></i> <a href="#" class="text-gray guide"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#guideModal"
+                                                                                style="margin-left: 1em"><i
+                    class="bi-book"></i> Guide</a></h3>
+        </div>
+        <div class="modal fade" id="guideModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">How to complete Verified</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>To find out more information about the Personal Verification process, please view our <a
+                                href="#" style="color: gold;">FAQ</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2">
+            <p class="text-gray text-end">Residential country/region:</p>
+        </div>
+        <div class="col-2">
+            <select class="form-select form-select-sm" style="width: 200px;">
+                <option selected>United Kingdom</option>
+                <option value="1">Islamic Republic of Iran</option>
+
+            </select>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+    <div class="row mt-4">
+        <div class="col-2"></div>
+        <div class="col-2 bg-light">
+            <br>
+            <h3><b> Current Features</b></h3>
+            <br><br><br><br><br><br><br><br>
+            <!-- shield image todo-->
+            <p class="text-center" style="font-size: small;"><b>Your account is currently not verified.</b></p>
+            <p class="text-gray text-center">Complete verification to access services on Jamejam.</p>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2">
+            <br>
+            <h3><b>Verified</b></h3>
+            <br>
+            <p class="text-gray"><i class="bi-person-lines-fill"></i> Personal information</p>
+            <p class="text-gray"><i class="bi-card-list"></i> Government-issued ID</p>
+            <p class="text-gray"><i class="bi-person"></i> Facial recognition</p>
+            <p class="text-gray"><i class="bi-clock-history"></i> Review time: 10 days</p>
+            <br>
+            <div class="d-grid gap-2">
+                <button class="btn btn-yellow btn-lg" type="button">Start Now</button>
+            </div>
+            <br>
+            Fiat Deposit & Withdrawal Limits</p>
+            <h6>$50K Daily</h6>
+            <br>
+            <p class="text-gray">Crypto Withdrawal Limit</p>
+            <h6>100 BTC Daily</h6>
+            <br>
+            <p class="text-gray">P2P Transaction Limits</p>
+            <h6>Unlimited</h6>
+            <br>
+            <p class="text-gray">Other Features</p>
+            <h6>LPD/OTC/Binance card</h6>
+
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2">
+            <br>
+            <h3><b>Verified Plus</b></h3>
+            <br>
+            <p class="text-gray"><i class="bi-geo-alt"></i> Proof of address</p>
+            <p class="text-gray"><i class="bi-clock-history"> </i>Review time: 10 days</p>
+            <br>
+            <p style="visibility:hidden;">asd</p>
+            <p style="visibility:hidden;">asd</p>
+            <div class="d-grid gap-2">
+                <button class="btn btn-light btn-lg text-gray" type="button" disabled>Unavailable</button>
+            </div>
+            <br>
+            Fiat Deposit & Withdrawal Limits</p>
+            <h6>$200K Daily</h6>
+            <br>
+            <p class="text-gray">Crypto Withdrawal Limit</p>
+            <h6>100 BTC Daily</h6>
+            <br>
+            <p class="text-gray">P2P Transaction Limits</p>
+            <h6>Unlimited</h6>
+            <br>
+            <p class="text-gray">Other Features</p>
+            <h6>LPD/OTC/Binance card</h6>
+        </div>
+
+
+    </div>
+
+    <br><br>
+</section>
+
+
+{% endblock %}

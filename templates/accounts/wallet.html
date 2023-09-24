@@ -1,0 +1,352 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row d-flex flex-wrap">
+        {% include 'left_navbar2.html' %}
+        <div class="col py-3" style="background-color: #e8e8e8;">
+            <h1 style="margin-top: 10px; margin-left: 2%">Overview</h1>
+            <div style="margin-top: 2%; margin-left: 2%">
+                <button class="btn btn-warning"><a href="#" style="color: black; text-decoration: none;">Deposit</a>
+                </button>
+                <button class="btn btn-light" style="margin-left: 1%; border-color: #9e9e9e"><a href="#"
+                                                                                                style="color: black; text-decoration: none;">Withdraw</a>
+                </button>
+                <button class="btn btn-light" style="margin-left: 1%; border-color: #9e9e9e"><a href="#"
+                                                                                                style="color: black; text-decoration: none;">Transfer</a>
+                </button>
+                <a href="#" style="color: #cc9c35; margin-left: 2%;">Transaction History</a>
+            </div>
+
+            <hr style="margin-left: 20px">
+            <div style="background-color: #ebe0bc; height: auto;">
+                <div class="row">
+                    <div class="col-10 py-3" style="margin-top: 1%; margin-left: 2%;">
+                        <h6><small>You are required to complete Intermediate Verification to access Binance services.
+                            Plus, verify now and get a 500 BUSD Savings Trial Fund Voucher.<a href="#"
+                                                                                              style="margin-left: 10px; color: #cc9c35">Learn
+                                more</a></small></h6>
+                    </div>
+                    <div class="col py-3" style="margin-top: 0%;">
+                        <button type="button" class="btn btn-outline-warning"
+                                style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                    style="text-decoration: none; color: black">Verify</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 10px;" class="row bg-light">
+                <div class="row">
+                    <div class="col-4" style="margin-top: 2%;">
+                        <p style="margin-left: 5%;">Estimated Balance</p>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-light"
+                                style="margin-top: 2.2%; margin-bottom: 2%; margin-left: -5%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">Hide Balance</a></button>
+                    </div>
+                    <div style="margin-left: 1.5%; margin-bottom: 1%;">
+                        <span style="font-size: 30px;">0.00000000</span> BTC ≈ $0.000000
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px;" class="row bg-light">
+                <div class="row" id="section1">
+                    <div class="col-md-5" style="margin-top: 2%; text-align: left;">
+                        <p style="margin-left: 5%; font-size: 20px;"><a href="#"
+                                                                        style="color: black; text-decoration: none;">Fiat
+                            and Spot</a></p>
+                        <span style="font-size: 20px; margin-left: 5%;">0.00000000</span> BTC ≈ $0.000000
+                    </div>
+
+                    <div class="col-md-2" style="margin-top: 2%;"><a href="#"
+                                                                     style="color: black; text-decoration-line: none; font-size: 13.5px;">This
+                        is your spot trading account. Simply transfer funds to start trading on the world’s leading
+                        crypto exchange instantly!</a>
+                    </div>
+
+                    <div class="col-md-5" style="text-align: right;">
+                        <button class="btn btn-light"
+                                style="margin-top: 8%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">Deposit</a></button>
+                        <span>
+                <button class="btn btn-light"
+                        style="margin-top: 8%; margin-bottom: 2%; margin-left: 1%; border-color: #9e9e9e"><a href="#"
+                                                                                                             style="color: black; text-decoration-line: none;">Transfer</a></button>
+              </span>
+                    </div>
+                </div>
+
+                <hr style="margin-top: 2%;">
+
+                <div class="row" id="section2">
+
+                    <div class="col-md-5" style="margin-top: 2%; text-align: left;">
+                        <p style="margin-left: 5%; font-size: 20px;"><a href="#"
+                                                                        style="color: black; text-decoration: none;">Funding</a>
+                        </p>
+                        <span style="font-size: 20px; margin-left: 5%;">0.00000000</span> BTC ≈ $0.000000
+                    </div>
+
+                    <div class="col-md-2" style="margin-top: 2%;"><a href="#"
+                                                                     style="color: black; text-decoration-line: none; font-size: 13.5px;">Buy
+                        crypto with cash to start trading!</a>
+                    </div>
+
+                    <div class="col-md-5" style="text-align: right;">
+                        <button class="btn btn-light"
+                                style="margin-top: 5%; margin-bottom: 2%; margin-left: 1%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">Buy / Sell</a></button>
+                        <button class="btn btn-light"
+                                style="margin-top: 5%; margin-bottom: 2%; margin-left: 1%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">Pay</a></button>
+                        <button class="btn btn-light"
+                                style="margin-top: 5%; margin-bottom: 2%; margin-left: 1%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">Recieve</a></button>
+                        <button class="btn btn-light"
+                                style="margin-top: 5%; margin-bottom: 2%; margin-left: 1%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">Transfer</a></button>
+                    </div>
+                </div>
+
+                <hr style="margin-top: 2%">
+
+                <div class="row" id="section3">
+                    <div class="col-md-5" style="margin-top: 2%;">
+                        <p style="margin-left: 5%; font-size: 20px;"><a href="#"
+                                                                        style="color: black; text-decoration: none;">Cross
+                            and Margin</a></p>
+                        <span style="font-size: 20px; margin-left: 5%;">0.00000000</span> BTC ≈ $0.000000
+                    </div>
+
+                    <div class="col-md-2" style="margin-top: 2%;"><a href="#"
+                                                                     style="color: black; text-decoration-line: none; font-size: 13.5px;">Trade
+                        assets using funds provided by a third party with a Margin Account. Transfer funds to your
+                        Margin Account to start trading!</a>
+                    </div>
+
+                    <div class="col-md-5" style="text-align: right;">
+                        <button class="btn btn-light"
+                                style="margin-top: 8%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">Transfer</a></button>
+                    </div>
+                </div>
+
+                <hr style="margin-top: 2%;">
+
+                <div class="row" id="section4">
+                    <div class="col-md-5" style="margin-top: 2%;">
+                        <p style="margin-left: 5%; font-size: 20px;"><a href="#"
+                                                                        style="color: black; text-decoration: none;">Isolated
+                            and Margin</a></p>
+                        <span style="font-size: 20px; margin-left: 5%;">0.00000000</span> BTC ≈ $0.000000
+                    </div>
+
+                    <div class="col-md-2" style="margin-top: 2%;"><a href="#"
+                                                                     style="color: black; text-decoration-line: none; font-size: 13.5px;">Trade
+                        assets using funds provided by a third party with a Margin Account. Transfer funds to your
+                        Margin Account to start trading!</a>
+                    </div>
+
+                    <div class="col-md-5" style="text-align: right;">
+                        <button class="btn btn-light"
+                                style="margin-top: 8%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">View</a></button>
+                    </div>
+                </div>
+
+                <hr style="margin-top: 2%;">
+
+                <div class="row " id="section5">
+                    <div class="col-md-5" style="margin-top: 2%;">
+                        <p style="margin-left: 5%; font-size: 20px;"><a href="#"
+                                                                        style="color: black; text-decoration: none;">USDⓈ-M
+                            Futures</a></p>
+                        <span style="font-size: 20px; margin-left: 5%;">0.00000000</span> BTC ≈ $0.000000
+                    </div>
+
+                    <div class="col-md-2" style="margin-top: 2%;"><a href="#"
+                                                                     style="color: black; text-decoration-line: none; font-size: 13.5px;">Transfer
+                        USDT to your USDⓈ-M Futures account to trade USDT margined futures with no expiration and up to
+                        125x leverage.</a>
+                    </div>
+
+                    <div class="col-md-5" style="text-align: right;">
+                        <span style="font-size: 14px; color: #ccb800">Inactive</span>
+                        <button class="btn btn-light"
+                                style="margin-top: 8%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">Activate</a></button>
+                    </div>
+                </div>
+
+                <hr style="margin-top: 2%;">
+
+                <div class="row" id="section6">
+                    <div class="col-md-5" style="margin-top: 2%;">
+                        <p style="margin-left: 5%; font-size: 20px;"><a href="#"
+                                                                        style="color: black; text-decoration: none;">COIN-M
+                            Futures</a></p>
+                        <span style="font-size: 20px; margin-left: 5%;">0.00000000</span> BTC ≈ $0.000000
+                    </div>
+
+                    <div class="col-md-2" style="margin-top: 2%;"><a href="#"
+                                                                     style="color: black; text-decoration-line: none; font-size: 13.5px;">Transfer
+                        funds to your Coin-Ⓜ Futures account to trade coin margined futures with or without expiry dates
+                        and up to 125x leverage.</a>
+                    </div>
+
+                    <div class="col-md-5" style="text-align: right;">
+                        <span style="font-size: 14px; color: #ccb800">Inactive</span>
+                        <button class="btn btn-light"
+                                style="margin-top: 8%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">Activate</a></button>
+                    </div>
+                </div>
+
+                <hr style="margin-top: 2%;">
+
+                <div class="row" id="section7">
+                    <div class="col-md-5" style="margin-top: 2%;">
+                        <p style="margin-left: 5%; font-size: 20px;"><a href="#"
+                                                                        style="color: black; text-decoration: none;">Stock
+                            Token</a></p>
+                        <span style="font-size: 20px; margin-left: 5%;">0.00000000</span> BTC ≈ $0.000000
+                    </div>
+
+                    <div class="col-md-2" style="margin-top: 2%;"><a href="#"
+                                                                     style="color: black; text-decoration-line: none; font-size: 13.5px;">Trade
+                        equity shares through crypto coins.</a>
+                    </div>
+
+                    <div class="col-md-5" style="text-align: right;">
+                        <button class="btn btn-light"
+                                style="margin-top: 8%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">Trade</a></button>
+                    </div>
+                </div>
+
+                <hr style="margin-top: 2%">
+
+                <div class="row" id="section8">
+                    <div class="col-md-5" style="margin-top: 2%;">
+                        <p style="margin-left: 5%; font-size: 20px;"><a href="#"
+                                                                        style="color: black; text-decoration: none;">Earn</a>
+                        </p>
+                        <span style="font-size: 20px; margin-left: 5%;">0.00000000</span> BTC ≈ $0.000000
+                    </div>
+
+                    <div class="col-md-2" style="margin-top: 2%;"><a href="#"
+                                                                     style="color: black; text-decoration-line: none; font-size: 13.5px;">Transfer
+                        crypto to a Savings Account and earn interest with the flexibility to withdraw your funds at any
+                        time.</a>
+                    </div>
+
+                    <div class="col-md-5" style="text-align: right;">
+                        <button class="btn btn-light"
+                                style="margin-top: 8%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">View</a></button>
+                    </div>
+                </div>
+
+                <hr style="margin-top: 2%;">
+
+                <div class="row" id="section9">
+                    <div class="col-md-5" style="margin-top: 2%;">
+                        <p style="margin-left: 5%; font-size: 20px;"><a href="#"
+                                                                        style="color: black; text-decoration: none;">Pool</a>
+                        </p>
+                        <span style="font-size: 20px; margin-left: 5%;">0.00000000</span> BTC ≈ $0.000000
+                    </div>
+
+                    <div class="col-md-2" style="margin-top: 2%;"><a href="#"
+                                                                     style="color: black; text-decoration-line: none; font-size: 13.5px;">Receive
+                        mining income and participate in a variety of mining financial services and products with
+                        Binance Pool.</a>
+                    </div>
+
+                    <div class="col-md-5" style="text-align: right;">
+                        <span style="font-size: 14px; color: #ccb800">Inactive</span>
+                        <button class="btn btn-light"
+                                style="margin-top: 8%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">Activate</a></button>
+                    </div>
+                </div>
+
+                <hr style="margin-top: 2%;">
+
+                <div class="row" id="section10">
+                    <div class="col-md-5" style="margin-top: 2%;">
+                        <p style="margin-left: 5%; font-size: 20px;"><a href="#"
+                                                                        style="color: black; text-decoration: none;">Vanilla
+                            Options</a></p>
+                        <span style="font-size: 20px; margin-left: 5%;">0.00000000</span> BTC ≈ $0.000000
+                    </div>
+
+                    <div class="col-md-2" style="margin-top: 2%;"><a href="#"
+                                                                     style="color: black; text-decoration-line: none; font-size: 13.5px;">
+                        Transfer funds to your Vanilla Options account to start trading.</a>
+                    </div>
+
+                    <div class="col-md-5" style="text-align: right;">
+                        <button class="btn btn-light"
+                                style="margin-top: 8%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none;">Trade</a></button>
+                    </div>
+                </div>
+                <div style="margin-top: 2%;"></div>
+
+            </div>
+
+            <div class="row" style="margin-top: 2%;">
+                <div class="col bg-light">
+                    <p style="font-size: 14px; margin-top: 4%;">Tokocrypto</p>
+                    <p style="font-size: 13px;">Trade with Indonesian rupiah. Deposit and withdraw instantly with direct
+                        bank transfer.</p>
+                    <span style="font-size: 13px; color: #ccb800">Inactive</span>
+                    <button class="btn btn-light"
+                            style="margin-top: 8%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                            href="#" style="color: black; text-decoration-line: none; font-size: 13px;">Activate</a>
+                    </button>
+                </div>
+
+                <div class="col bg-light">
+                    <p style="font-size: 14px; margin-top: 4%;">Binance TR</p>
+                    <p style="font-size: 13px;">Trade with Turkish Lira. Deposit and withdraw instantly with direct bank
+                        transfer.</p>
+                    <span style="font-size: 13px; color: #ccb800;">Inactive</span>
+                    <button class="btn btn-light"
+                            style="margin-top: 8%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                            href="#" style="color: black; text-decoration-line: none; font-size: 13px;">Activate</a>
+                    </button>
+                </div>
+
+                <div class="col bg-light">
+                    <p style="font-size: 14px; margin-top: 4%;">WazirX</p>
+                    <p style="font-size: 13px;">Trade on WazirX or transfer to Binance.</p>
+                    <div style="margin-bottom: auto;">
+                        <span style="font-size: 13px; color: #ccb800;">Inactive</span>
+                        <button class="btn btn-light"
+                                style="margin-top: 14%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none; font-size: 13px;">Activate</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col bg-light">
+                    <p style="font-size: 14px; margin-top: 4%;">JEX</p>
+                    <p style="font-size: 13px;">JEX is a crypto Futures and Options exchange.</p>
+                    <div style="margin-bottom: auto;">
+                        <span style="font-size: 13px; color: #ccb800;">Inactive</span>
+                        <button class="btn btn-light"
+                                style="margin-top: 14%; margin-bottom: 2%; margin-left: 1.5%; border-color: #9e9e9e"><a
+                                href="#" style="color: black; text-decoration-line: none; font-size: 13px;">Activate</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

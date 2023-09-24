@@ -1,0 +1,51 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        {% include 'left_navbar1.html' %}
+        <div class="col py-3 bg-light">
+            <h2 class="payment_h2">Payment</h2>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group"
+                 style="margin-top: 15px; margin-left: 20px">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                <label class="btn-link" for="btnradio1"
+                       style="margin-right: 20px; margin-top: 5px; border: none; text-decoration: none;">
+                    <a href="payment/c2c/" class="text-black" style="text-decoration: none;">P2P</a>
+                </label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn-link" for="btnradio2"
+                       style="margin-right: 20px; margin-top: 5px; border: none; text-decoration: none;">
+                    <a href="/payment/bc" class="text-black" style="text-decoration: none;">Buy Crypto</a>
+                </label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked>
+                <label class="btn btn-outline-warning text-black" for="btnradio3"
+                       style="border: none;">Withdraw</label>
+            </div>
+            <hr style="margin-left: 20px">
+
+            <!-- <div class="col-md-7" style="text-align: left; margin-left: 20px; display: inline-block;">
+              Manage the payment method of your credit and debit card on the buy crypto page
+            </div>  -->
+            <div style="margin-left: 1%">
+                <button type="button" class="btn btn-outline-warning" style="text-decoration: none;"><a href="#"
+                                                                                                        class="text-black"
+                                                                                                        style="text-decoration: none;">
+                    Add Bank Account</a></button>
+            </div>
+
+            <div style="height: auto; background-color: #ededed; margin-top: 30px" class="row">
+                <h6 class="col wd-h6">Bank Country</h6>
+                <h6 class="col wd-h6">Currency</h6>
+                <h6 class="col wd-h6">Bank Name</h6>
+                <h6 class="col wd-h6">Branch Code</h6>
+                <h6 class="col wd-h6">Account Number</h6>
+                <h6 class="col wd-h6">Account Status</h6>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

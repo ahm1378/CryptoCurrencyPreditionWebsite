@@ -1,0 +1,409 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Buy and Sell Crypto Section -->
+<section>
+    <div class="container-fluid p-5 bg-light">
+        <div class="card p-5 bg-light" id="card-style">
+            <div class="card-body">
+                <h1 class="card-title">Buy & sell Crypto in minutes</h1>
+                <p class="card-text">Join the world's largest crypto exchange</p>
+                <a href="/register" class="btn btn-warning">Register Now</a>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">BTC/BUSD <span class="text-danger">-0.49%</span></h5>
+                    <p class="card-text">{{Rate1}}</p>
+                    <p class="card-text"><small class="text-muted">${{Ask1}}</small></p>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">ETH/BUSD <span class="text-danger">-3.30%</span></h5>
+                    <p class="card-text">{{Rate2}}</p>
+                    <p class="card-text"><small class="text-muted">${{Ask2}}</small></p>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">SOL/BUSD <span class="text-success">+32.33%</span></h5>
+                    <p class="card-text">{{Rate3}}</p>
+                    <p class="card-text"><small class="text-muted">${{Ask3}}</small></p>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">DOGE/BUSD <span class="text-danger">-6.62%</span></h5>
+                    <p class="card-text">{{Rate4}}</p>
+                    <p class="card-text"><small class="text-muted">${{Ask4}}</small></p>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">FTT/BUSD <span class="text-success">+48.81%</span></h5>
+                    <p class="card-text">{{Rate5}}</p>
+                    <p class="card-text"><small class="text-muted">${{Ask5}}</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Carousel Section -->
+<section>
+    <div class="container-fluid p-5 bg">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/1.jpeg' %}"></h4>
+            </div>
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/2.png' %}"></h4>
+            </div>
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/3.jpeg' %}"></h4>
+            </div>
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/4.jpeg' %}"></h4>
+            </div>
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/5.png' %}"></h4>
+            </div>
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/6.jpeg' %}"></h4>
+            </div>
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/7.jpeg' %}"></h4>
+            </div>
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/8.jpeg' %}"></h4>
+            </div>
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/9.png' %}"></h4>
+            </div>
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/10.jpeg' %}"></h4>
+            </div>
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/11.png' %}"></h4>
+            </div>
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/12.png' %}"></h4>
+            </div>
+            <div class="item">
+                <h4><img width="200px" height="200px" src="{% static '/assets/img/13.jpeg' %}"></h4>
+            </div>
+        </div>
+        <p><span><i class="bi bi-megaphone"></i></span>&nbsp;&nbsp;Jamejam Will Support the Flow (FLOW) and YOYOW (YOYO)
+            Network Upgrades & Hard Forks&nbsp;&nbsp;<a href="" class="link-warning">More</a></p>
+        <p><span><i class="bi bi-file-text"></i></span>&nbsp;&nbsp;Special Notice about Binance.com in
+            Singapore&nbsp;&nbsp;<a href="" class="link-warning">More</a></p>
+        <p><span><i class="bi bi-file-text"></i></span>&nbsp;&nbsp;Special Notice About Binance Markets
+            Limited&nbsp;&nbsp;<a href="" class="link-warning">More</a></p>
+    </div>
+</section>
+
+
+<!-- Market Trend Section -->
+<section>
+    <div class="container-fluid p-5">
+        <h1>Market Trend</h1>
+        <table class="table table-hover table-borderless">
+            <thead>
+            <th scope="col">Name</th>
+            <th scope="col">Last Price</th>
+            <th scope="col">24h Change</th>
+            <th scope="col">Markets</th>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row"><img src="{% static '/assets/img/logos/binance-coin-bnb-logo.svg' %}" width="40px"
+                                     alt="">&nbsp;&nbsp;<span class="markettrends">BNB</span>&nbsp;&nbsp;<span
+                        class="text-secondary">BNB</span></th>
+                <th class="markettrends">$399.22</th>
+                <th style="font-size: 1.25rem;" class="text-danger">-0.32%</th>
+                <th><img src="{% static '/assets/img/markets/bnb.png' %}"></th>
+            </tr>
+            <tr>
+                <th scope="row"><img src="{% static '/assets/img/logos/bitcoin-btc-logo.svg' %}" width="40px" alt="">&nbsp;&nbsp;<span
+                        class="markettrends">BTC</span>&nbsp;&nbsp;<span class="text-secondary">Bitcoin</span></th>
+                <th class="markettrends">$45205.25</th>
+                <th class="text-success markettrends">+0.86%</th>
+                <th><img src="{% static '/assets/img/markets/bnb.png' %}"></th>
+            </tr>
+            <tr>
+                <th scope="row"><img src="{% static '/assets/img/logos/ethereum-eth-logo.svg' %}" width="40px" alt="">&nbsp;&nbsp;<span
+                        class="markettrends">ETH</span>&nbsp;&nbsp;<span class="text-secondary">Ethereum</span></th>
+                <th class="markettrends">$3285.25</th>
+                <th class="text-success markettrends">+0.05%</th>
+                <th><img src="{% static '/assets/img/markets/bnb.png' %}"></th>
+            </tr>
+            <tr>
+                <th scope="row"><img src="{% static '/assets/img/logos/chiliz-chz-seeklogo.com.svg' %}" width="40px"
+                                     alt="">&nbsp;&nbsp;<span class="markettrends">CHZ</span>&nbsp;&nbsp;<span
+                        class="text-secondary">Chiliz</span></th>
+                <th class="markettrends">$0.320636</th>
+                <th class="text-danger markettrends">-2.05%</th>
+                <th><img src="{% static 'assets/img/markets/bnb.png' %}"></th>
+            </tr>
+            <tr>
+                <th scope="row"><img src="{% static '/assets/img/logos/filecoin-fil-logo.svg' %}" width="40px" alt="">&nbsp;&nbsp;<span
+                        class="markettrends">FIL</span>&nbsp;&nbsp;<span class="text-secondary">Filecoin</span></th>
+                <th class="markettrends">$78.41</th>
+                <th class="text-danger markettrends">-3.74%</th>
+                <th><img src="{% static 'assets/img/markets/bnb.png' %}"></th>
+            </tr>
+            <tr>
+                <th scope="row"><img src="{% static '/assets/img/logos/cardano-ada-logo.svg' %}" width="40px" alt="">&nbsp;&nbsp;<span
+                        class="markettrends">ADA</span>&nbsp;&nbsp;<span class="text-secondary">Cardano</span></th>
+                <th class="markettrends">$2.39</th>
+                <th class="text-danger markettrends">-2.73%</th>
+                <th><img src="{% static 'assets/img/markets/bnb.png' %}"></th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+<!-- Trade Anywhere Section -->
+<section>
+    <div class="container-fluid p-5">
+        <h1>Trade. Anywhere.</h1>
+        <p>Compatible with multiple devices, start trading with safety and convenience.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col"><img src="{% static 'assets/img/binance-futures-apps.png' %}" class="img-fluid"></div>
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="container">
+                                    <div class="d-flex flex-row">
+                                        <div class="p-2"><img width="120px"
+                                                              src="{% static 'assets/img/logos/tractor-school-qr-code.png' %}">
+                                        </div>
+                                        <div class="p-2 align-self-center">
+                                            <p>Scan To Download</p>
+                                            <p style="font-size: 0.75rem;">iOS&Android</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="m-3 p-2 d-flex flex-column align-items-center flex-fill chbg">
+                                            <div>
+                                                <img src="{% static 'assets/img/logos/brand-apple.svg' %}" width="32px">
+                                            </div>
+                                            <div>
+                                                App Store
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="m-3 p-2 d-flex flex-column align-items-center flex-fill chbg">
+                                            <div>
+                                                <img src="{% static 'assets/img/logos/brand-android-robot.svg' %}"
+                                                     width="32px">
+                                            </div>
+                                            <div>
+                                                Android APK
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="m-3 p-2 d-flex flex-column align-items-center flex-fill chbg">
+                                            <div>
+                                                <img src="{% static 'assets/img/logos/icons8-google-play.svg' %}"
+                                                     width="32px">
+                                            </div>
+                                            <div>
+                                                Google Play
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="m-3 p-2 d-flex flex-column align-items-center flex-fill chbg">
+                                            <div>
+                                                <img src="{% static 'assets/img/logos/icons8-mac-logo-50.png' %}"
+                                                     width="32px">
+                                            </div>
+                                            <div>
+                                                Mac OS
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="m-3 p-2 d-flex flex-column align-items-center  flex-fill chbg">
+                                            <div>
+                                                <img src="{% static 'assets/img/logos/icons8-windows-10.svg' %}"
+                                                     width="32px">
+                                            </div>
+                                            <div>
+                                                Windows
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="m-3 p-2 d-flex flex-column  align-items-center flex-fill chbg">
+                                            <div>
+                                                <img src="{% static 'assets/img/logos/linux-svgrepo-com.svg' %}"
+                                                     width="32px">
+                                            </div>
+                                            <div>
+                                                Linux
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="m-3 p-2 d-flex flex-column align-items-center flex-fill chbg">
+                                            <div>
+                                                <img src="{% static 'assets/img/logos/api-svgrepo-com.svg' %}"
+                                                     width="32px">
+                                            </div>
+                                            <div>
+                                                API
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center"><a class="link-warning" href="">More Download Options</a></div>
+    </div>
+</section>
+
+<!-- Get In Touch Section -->
+<section>
+    <div class="container-fluid p-5">
+        <h1>Get in touch. Stay in touch.</h1>
+        <div class="container-fluid">
+            <div class="row align-items-start">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="container chbg">
+                        <div class="row">
+                            <div class="col"><img src="{% static 'assets/img/logos/customer-service-agent.svg' %}"
+                                                  width="64px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><h5>24/7 Support</h5></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><p>Got a problem? Just get in touch. Our support team is available
+                                24/7.</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="container chbg">
+                        <div class="row">
+                            <div class="col"><img src="{% static 'assets/img/logos/article.svg' %}" width="64px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><h5>Jamejam Blog</h5></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><p>News and updates from the world's leading cryptocurrency exchange.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="container chbg">
+                        <div class="row">
+                            <div class="col"><img src="{% static 'assets/img/logos/social-care.svg' %}" width="64px">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><h5>Community</h5></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><p>Jamejam is global. Join the discussion in our worldwide communities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-612 col-xs-12">
+                    <div class="container chbg">
+                        <div class="row">
+                            <div class="col"><img src="{% static '/assets/img/logos/career.svg' %}" width="64px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><h5>Career</h5></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><p>Help build the future of technology. Start your career at Jamejam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Buy and Sell Crypto Section -->
+<section>
+    <div class="container-fluid p-5 bg-light">
+        <div class="text-center">
+            <h1>Start Trading Now</h1>
+            <p>
+            <div class="p-3">
+                <a href="/register" class="btn btn-warning btn-lg m-3 px-5">Register Now</a>
+                <a href="#" class="btn btn-secondary btn-lg m-3 px-5">Trade Now</a>
+            </div>
+            </p>
+        </div>
+    </div>
+</section>
+
+<script>
+    window.setInterval('refresh()', 120001);
+    function refresh() {
+        window .location.reload();
+    }
+</script>
+
+<script src="{% static '/assets/owlcarousel/jquery.min.js' %}"></script>
+<script src="{% static '/assets/owlcarousel/owl.carousel.min.js' %}"></script>
+
+<script>
+    $(document).ready(function () {
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        cemter: true,
+        dots: false,
+        items: 5,
+        margin: 20,
+        nav: true,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      })
+    })
+</script>
+{% endblock %}

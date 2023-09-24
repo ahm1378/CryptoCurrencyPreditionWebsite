@@ -1,0 +1,137 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row d-flex flex-wrap">
+        {% include 'left_navbar2.html' %}
+
+        <div class="col">
+            <div class="container-fluid py-3">
+                <h1>Transaction History</h1>
+
+                <div class="row my-3">
+                    <div class="col">
+                        <a href="#" class="text-secondary" style="text-decoration: none;"><i class="bi bi-arrow-up-right-square"></i>&nbsp;Generate all statements</a>
+                    </div>
+                </div>
+
+                <div class="row my-3 py-3">
+                    <div class="col">
+                        <a href="/history"><button type="button" class="btn btn-secondary btn-lg">Crypto</button></a>
+                    </div>
+                    <div class="col">
+                        <a href="/fiat"><button type="button" class="btn btn-light btn-lg">Fiat</button></a>
+                    </div>
+                    <div class="col">
+                        <a href="/transfer"><button type="button" class="btn btn-light btn-lg">Transfer</button></a>
+                    </div>
+                    <div class="col">
+                        <a href="/distribution"><button type="button" class="btn btn-light btn-lg">Distribution</button></a>
+                    </div>
+                    <div class="col">
+                        <a href="/bnbconvert"><button type="button" class="btn btn-light btn-lg">BNB Convert</button></a>
+                    </div>
+                </div>
+
+                <div class="row my-3 py-3">
+                    <div class="col">
+                        <label>Type</label>
+                        <select class="form-select" aria-label="Type">
+                            <option value="Deposit" selected>Deposit</option>
+                            <option value="Withdraw">Withdraw</option>
+                            <option value="Auto deduction">Auto deduction</option>
+                            <option value="Auto funding">Auto funding</option>
+                            <option value="Arrears repayment">Arrears repayment</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label>Time</label>
+                        <select class="form-select" aria-label="Time">
+                            <option value="Past 7 days" selected>Past 7 days</option>
+                            <option value="Past 30 days">Past 30 days</option>
+                            <option value="Past 90 days">Past 90 days</option>
+                            <option value="Customized">Customized</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label>Asset</label>
+                        <select class="form-select" aria-label="Asset">
+                            <option value="All" selected>All</option>
+                            <option value="BTC">BTC</option>
+                            <option value="ETH">ETH</option>
+                            <option value="ADA">ADA</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label>Status</label>
+                        <select class="form-select" aria-label="Status">
+                            <option value="All" selected>All</option>
+                            <option value="Completed">Completed</option>
+                            <option value="Pending">Pending</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <label>TxID</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter TxID" aria-label="Enter TxID">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col py-3">
+                        <a href="#" class="text-warning">Deposit hasn't arrived? Click here</a>
+                        &nbsp;&nbsp;
+                        <a href="#" class="text-secondary" style="text-decoration: none;"><i class="bi bi-arrow-up-right-square"></i>&nbsp;Export Deposit History</a>
+                    </div>
+                </div>
+
+                    <div class="row">
+                        <div class="col py-3">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Time</th>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Asset</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">Destination</th>
+                                            <th scope="col">TxID</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>Time</td>
+                                        <td>Type</td>
+                                        <td>Asset</td>
+                                        <td>Amount</td>
+                                        <td>Destination</td>
+                                        <td>TxID</td>
+                                        <td>Status</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Time</td>
+                                        <td>Type</td>
+                                        <td>Asset</td>
+                                        <td>Amount</td>
+                                        <td>Destination</td>
+                                        <td>TxID</td>
+                                        <td>Status</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

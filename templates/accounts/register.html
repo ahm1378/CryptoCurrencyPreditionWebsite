@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="background-color: #f5e8ba; color: #f5e8ba; margin-bottom: 4%; height: 40px"><h2></h2></div>
+
+<div style="margin-left: 25%; margin-top: 30px">
+    <h2>Create Jamejam Account</h2>
+
+    {% if not request.user.is_authenticated %}
+
+    <div style="margin-top:20px">
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <form method="POST">{% csrf_token %}
+            {{ form.as_p }}
+            <div class="form-group form-check text-left">
+                <input type="checkbox" name="terms" class="form-check-input" id="terms_service"/>
+                <label class="form-check-label" for="terms_service" style="font-size: 15px">I have read and agree to
+                    Jamejam’s <a href="#" style="color: #d6a80f; text-decoration: none;"><b>Terms of
+                        Service</b></a></label>
+            </div>
+
+            <button type="submit" , class="btn btn-default"
+                    style="background-color: #ffd333; width: 35%; height: 50px; margin-bottom: 20px; margin-top: 20px">
+                Create Account
+            </button>
+        </form>
+        <p style="font-size: 15px">Already registered? <a href="/login"
+                                                          style="text-decoration: none; color: #d6a80f"><b>Log
+            In</b></a></p>
+
+        {% else %}
+        <p style="margin: 50px 0px;">You are already logged in and can not register. Would you like to <a
+                href="/logout/">logout?</a>
+        </p>
+        {% endif %}
+
+        <div style="margin-top: 7px">
+        </div>
+    </div>
+
+</div>
+
+<div style="background-color: #f5e8ba; color: #f5e8ba; margin: 4% 0; height: 40px"><h2></h2></div>
+
+
+{% endblock %}

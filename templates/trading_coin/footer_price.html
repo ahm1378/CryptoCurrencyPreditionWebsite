@@ -1,0 +1,40 @@
+
+<div class="orderbook-item py-4">
+            <h4 class="main-title py-4">معاملات بازار </h4>
+            <div class="table-responsive table-order table-custom-scrollbar">
+                <table class="table table-borderless">
+                    <thead>
+                    <tr>
+                        <th>قیمت باز شده</th>
+                        <th> بالاترین قیمت</th>
+                        <th>پایین ترین قیمت</th>
+                        <th>حجم</th>
+                        <th>قیمت بسته شده</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for price in history %}
+                    <tr>
+                        <td>
+                            {{ price.open }}
+                        </td>
+                        <td class="text-success">
+                            {{ price.close }}
+                        </td>
+                        <td class="text-danger">
+                            {{ price.high }}
+                        </td>
+                        <td>
+                            {{ price.volume }}
+                        </td>
+                        <td>
+                            {{ price.close }}
+                        </td>
+
+                    </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>

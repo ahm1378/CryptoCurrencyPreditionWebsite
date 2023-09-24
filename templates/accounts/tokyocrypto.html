@@ -1,0 +1,117 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row d-flex flex-wrap">
+        {% include 'left_navbar2.html' %}
+
+        <div class="col py-3 container-fluid" style="background-color: #fbfbfb;">
+
+            <div class="row" style="background-color: #ebe0bc; margin-top: -1%;">
+                <div class="col-10 py-3" style="margin-top: 0.5%; margin-left: 2%;">
+                    <h6><small>You are required to complete Intermediate Verification to access Binance services. Plus,
+                        verify now and get a 500 BUSD Savings Trial Fund Voucher.<a href="#"
+                                                                                    style="margin-left: 10px; color: #cc9c35">Learn
+                            more</a></small></h6>
+                </div>
+                <div class="col py-3" style="margin-top: 0.1%;">
+                    <a class="btn btn-warning" href="#" role="button">Verify</a>
+                </div>
+            </div>
+
+            <h2 style="text-align: center; margin-top: 3%;">Transfer</h2>
+            <div class="col" style="margin-left: 10%; margin-top: 1%; background-color: #f1f1f1; margin-right: 10%;">
+                <div style="height: 25px;"></div>
+                <div class="row" style="text-align: center;">
+                    <div class="col">
+                        <h6 style="font-size: auto;">Transfer to Tokocrypto</h6>
+                    </div>
+                    <div class="col">
+                        <h6><a href="#" style="color: #cc9c35">Visit Tokocrypto</a> <span
+                                style="color: #cc9c35">|</span> <a href="#" style="color: #cc9c35">Transfer History</a>
+                        </h6>
+                    </div>
+                </div>
+                <p style="text-align: center;">Trade with Indonesian rupiah. Deposit and withdraw instantly with direct
+                    bank transfer.
+                </p>
+                <hr>
+
+                <div class="row gy-2 gx-3 align-items-center" style="margin-left: 5%; margin-right: 5%;">
+                    <div class="col-auto col-md">
+                        <label class="" for="autoSizingInput">From:</label>
+                        <input type="text" style="background-color: white" class="form-control" id="autoSizingInput"
+                               placeholder="Spot Wallet" disabled>
+                    </div>
+                    <div class="col-auto col-md">
+                        <label class="" for="autoSizingInputGroup">To:</label>
+                        <div class="input-group">
+                            <input type="text" style="background-color: white;" class="form-control"
+                                   id="autoSizingInputGroup" placeholder="Tokocrypto Account" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gy-2 gx-3 align-items-center"
+                     style="margin-left: 5%; margin-right: 5%; margin-top: 1%;">
+                    <div class="col-auto col-md">
+                        <label for="specificSizeSelect">Coin</label>
+                        <select class="form-select" id="specificSizeSelect">
+                            <option selected>BIDR Bidr</option>
+                            <option value="1">Various Options...</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row gy-2 gx-3 align-items-center"
+                     style="margin-left: 5%; margin-right: 5%; margin-top: 1%;">
+                    <div class="input-group col-auto">
+                        <label>Amount</label>
+                        <div class="input-group">
+                            <input class="form-control" type="text" value="0" aria-label="default input example">
+                            <span class="input-group-text">Available: 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gy-2 gx-3 align-items-center"
+                     style="margin-left: 5%; margin-right: 5%; margin-top: 1%;">
+                    <h6><span style="color: #9e9e9e">24h Withdraw Limit: </span><span style="color: #cc9c35">0</span> /
+                        10000 USDT</h6>
+                </div>
+
+                <div class="row gy-2 gx-3 align-items-center"
+                     style="margin-left: 5%; margin-right: 5%; margin-top: 1%;">
+
+                    <div class="col-auto">
+                        <a class="btn btn-light" style="border-color: black;" href="#" role="button">25%</a>
+                    </div>
+                    <div class="col-auto">
+                        <a class="btn btn-light" style="border-color: black;" href="#" role="button">50%</a>
+                    </div>
+                    <div class="col-auto">
+                        <a class="btn btn-light" style="border-color: black;" href="#" role="button">75%</a>
+                    </div>
+                    <div class="col-auto">
+                        <a class="btn btn-light" style="border-color: black;" href="#" role="button">100%</a>
+                    </div>
+
+                </div>
+
+                <div class="row gy-2 gx-3 align-items-center"
+                     style="margin-left: 5%; margin-right: 5%; margin-top: 2%;">
+                    <a class="col btn btn-warning" style="border: none;" href="#" role="button">Connect Tokocrypto</a>
+                </div>
+
+                <div class="row gy-2 gx-3 align-items-center"
+                     style="margin-left: 5%; margin-right: 5%; margin-top: 3%;">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}

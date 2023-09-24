@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="background-color: #f5e8ba; color: #f5e8ba; margin-bottom: 4%; height: 40px"><h2></h2></div>
+<div style="margin-left: 25%">
+    <h2>JAMEJAM Account Logout</h2>
+
+    {% if request.user.is_authenticated %}
+    <form method="POST">{% csrf_token %}
+        <p>Are you sure you want to log out?</p>
+        <button type="submit" class="btn btn-default"
+                style="background-color: #ffd333; width: 35%; height: 50px; margin-bottom: 20px">Yes, Log Out
+        </button>
+    </form>
+    {% else %}
+    <p style="margin: 50px 0px;">You are not logged in. Would you like to <a href="/login/">login?</a></p>
+    {% endif %}
+</div>
+
+{% endblock %}

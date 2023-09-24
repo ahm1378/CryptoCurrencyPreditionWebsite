@@ -1,0 +1,172 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row d-flex flex-wrap">
+        {% include 'left_navbar2.html' %}
+        <div class="col py-3">
+            <div class="container-fluid">
+                <div class="row bg-light py-3">
+                    <div class="col-md-4 float-left">
+                        <h3>Fiat and Spot
+                            <button class="btn-sm btn-light"><i class="bi-eye-slash-fill"></i>Hide Balance</button>
+                        </h3>
+                    </div>
+                    <div class="col-md-8 float-right">
+                        <button class="btn btn-warning">Deposit</button>
+                        <button class="btn btn-light" style="margin-left: 1em">Withdraw</button>
+                        <button class="btn btn-light" style="margin-left: 1em">Pay</button>
+                        <button class="btn btn-light" style="margin-left: 1em">Transfer</button>
+                        <button class="btn btn-light" style="margin-left: 1em"><i class="bi-link"></i>Wallet Direct
+                        </button>
+                        <a href="#" style="text-decoration: underline; color: darkgoldenrod;"> Deposit Withdraw
+                            History</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container-fluid">
+                <div class="row bg-light align-content-start">
+                    <p style="visibility:hidden; font-size: smaller;">asd</p>
+                    <div class="col-md-3">
+                        <p>Fiat and Spot balance</p>
+                        <h3>0.00000000<sub style="font-weight: normal; font-size: small;">BTC</sub></h3>
+                        <p>≈ $0.000000</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Spot balance</p>
+                        <h3>0.00000000<sub style="font-weight: normal; font-size: small;">BTC</sub></h3>
+                        <p>≈ $0.000000</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Fiat balance</p>
+                        <h3>0.00000000<sub style="font-weight: normal; font-size: small;">BTC</sub></h3>
+                        <p>≈ $0.000000</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Yesterday's PNL</p>
+                        <h3>--</h3>
+                        <p>--</p>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <div class="container-fluid bg-white">
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="" id="" placeholder="Search Coin" class="form-control">
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            </label>
+                            <p class="text-gray" style="text-decoration: dotted;">Hide Small Balances</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" style="text-decoration: underline; color: darkgoldenrod;">Convert Small Balance to
+                            BNB</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="table-responsive">
+                            <table id="coinTable" class="table table-hover" style="width:100%">
+                                <thead>
+                                <tr>
+                                    <th>Coin</th>
+                                    <th>Total</th>
+                                    <th>Available</th>
+                                    <th>In Order</th>
+                                    <th>BTC Value</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <p>BTC</p>
+
+                                    </td>
+                                    <td>0.0000000</td>
+                                    <td>0.0000000</td>
+                                    <td>0.0000000</td>
+                                    <td>0.0000000</td>
+                                    <td>
+                                        <div class="row">
+                                            <div class="col">
+                                                <a href="#" style="text-decoration: none; color: darkgoldenrod;">Buy</a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"
+                                                   style="text-decoration: none; color: darkgoldenrod;">Deposit</a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#" style="text-decoration: none; color: darkgoldenrod;">Withdraw</a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"
+                                                   style="text-decoration: none; color: darkgoldenrod;">Trade</a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"
+                                                   style="text-decoration: none; color: darkgoldenrod;">Earn</a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"
+                                                   style="text-decoration: none; color: darkgoldenrod;">Convert</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>ETH</p>
+
+                                    </td>
+                                    <td>0.0000000</td>
+                                    <td>0.0000000</td>
+                                    <td>0.0000000</td>
+                                    <td>0.0000000</td>
+                                    <td>
+                                        <div class="row">
+                                            <div class="col">
+                                                <a href="#" style="text-decoration: none; color: darkgoldenrod;">Buy</a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"
+                                                   style="text-decoration: none; color: darkgoldenrod;">Deposit</a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#" style="text-decoration: none; color: darkgoldenrod;">Withdraw</a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"
+                                                   style="text-decoration: none; color: darkgoldenrod;">Trade</a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"
+                                                   style="text-decoration: none; color: darkgoldenrod;">Earn</a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"
+                                                   style="text-decoration: none; color: darkgoldenrod;">Convert</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

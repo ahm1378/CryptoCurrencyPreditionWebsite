@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div style="background-color: #f5e8ba; color: #f5e8ba; margin-bottom: 4%; height: 40px"><h2></h2></div>
+<div style="margin-left: 25%">
+    <h2>JAMEJAM Account Login</h2>
+
+    {% if not request.user.is_authenticated %}
+    <p style="margin-bottom: 35px; margin-top: 15px">Welcome back! Log In with your Username and Password</p>
+
+    {% if error %}
+    <p style="color:red">{{error}}</p>
+    {% endif %}
+
+
+
+    <form method="POST">{% csrf_token %}
+
+        <div class="form-group" style="margin-top: 25px">
+            <label>Username</label>
+            <input type="text" name="username" class="form-control"
+                   style="width: 35%; height: 50px; margin-top: 5px; margin-bottom: 20px" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" class="form-control"
+                   style="width: 35%;  height: 50px; margin-top: 5px; margin-bottom: 25px;" required>
+        </div>
+
+        <button type="submit" class="btn btn-default"
+                style="background-color: #ffd333; width: 35%; height: 50px; margin-bottom: 20px">Log In
+        </button>
+    </form>
+    <a href="#" style="text-decoration: none; color: #d6a80f; font-size: 15px;"><b>Forgot password?</b></a>
+    <div style="margin-top: 7px">
+        <a href="/register" style="text-decoration: none; color: #d6a80f; font-size: 15px"><b>Register now</b></a>
+    </div>
+    {% else %}
+    <p style="margin: 50px 0px;">You are already logged in. Would you like to <a href="/logout/">logout?</a></p>
+    {% endif %}
+</div>
+
+<div style="background-color: #f5e8ba; color: #f5e8ba; margin: 4% 0; height: 40px"><h2></h2></div>
+
+
+{% endblock %}

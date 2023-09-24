@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% include 'trading/menu.html' %}
+<div>
+
+    {{ monthly_plot|safe }}
+
+    <nav class="navbar navbar-light bg-light">
+  <form class="form-inline" >
+      <a href="{% url 'daily' name %}"> <button class="btn btn-sm btn-outline-secondary" type="button">Daily</button></a>
+      <a href="{% url 'weekly' name %}"> <button class="btn btn-sm btn-outline-secondary" type="button">Weekly</button></a>
+      <a href="myOtherFile"><button class="btn btn-sm btn-outline-secondary" type="button">Monthly</button></a>
+      <a href="myOtherFile"> <button class="btn btn-sm btn-outline-secondary" type="button">Yearly</button></a>
+  </form>
+</nav>
+</div>
+{% endblock %}

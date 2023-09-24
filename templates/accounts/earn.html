@@ -1,0 +1,121 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row d-flex flex-wrap">
+        {% include 'left_navbar2.html' %}
+        <div class="col" style="background-color: #e8e8e8; height: auto;">
+            <h1 style="margin-left: 5%; margin-bottom: 2%; margin-top: 2%">Earn</h1>
+            <div class="row">
+                <a class="link-1 col" href="#" style="margin-left: 5%;">Products</a>
+                <a class="link-1 col" href="#">History</a>
+                <a class="link-1 col" href="#" style="margin-left: -3%; margin-right: 2%;">Binance Staking Products</a>
+                <a class="link-1 col" href="#" style="margin-right: 5%;">Locked Staking History</a>
+                <a class="link-1 col" href="#">Launchpad</a>
+                <a class="link-1 col" href="#">Buy Now</a>
+            </div>
+            <hr>
+            <div class="row" style="background-color: #ebe0bc; margin-left: 5%; margin-right: 5%">
+                <div class="col-10 py-3" style="margin-top: 1%; margin-left: 2%;">
+                    <h6><small>You are required to complete Intermediate Verification to access Binance services. Plus,
+                        verify now and get a 500 BUSD Savings Trial Fund Voucher.<a href="#"
+                                                                                    style="margin-left: 10px; color: #cc9c35">Learn
+                            more</a></small></h6>
+                </div>
+                <div class="col py-3" style="margin-top: 0.5%;">
+                    <a class="btn btn-warning" href="#" role="button">Verify</a>
+                </div>
+            </div>
+
+            <div style="margin-left: 5%; margin-top: 5%; margin-bottom: 2%; margin-right: 5%;">
+                <div class="row">
+                    <a class="col btn btn-sm btn-warning" href="#" role="button"
+                       style="border-color: black;">Savings</a>
+                    <a class="col btn btn-sm btn-light" id="section-link1" href="#" role="button"
+                       style="border-color: black">Locked Staking</a>
+                    <a class="col btn btn-sm btn-light" id="section-link2" href="#" role="button"
+                       style="border-color: black">DeFi Staking</a>
+                    <a class="col btn btn-sm btn-light" id="section-link3" href="#" role="button"
+                       style="border-color: black">Launchpad</a>
+                    <a class="col btn btn-sm btn-light" id="section-link4" href="#" role="button"
+                       style="border-color: black">Swap</a>
+                    <a class="col btn btn-sm btn-light" id="section-link5" href="#" role="button"
+                       style="border-color: black">Dual Investment</a>
+                    <a class="col btn btn-sm btn-light" id="section-link6" href="#" role="button"
+                       style="border-color: black">Pool Savings</a>
+                </div>
+            </div>
+            <hr>
+
+            <div class=" bg-light">
+                <div class="row" style="margin-left: 5%;">
+                    <div class="col" style="margin-top: 1%;">
+                        <p>Estimated Value</p>
+                        <h4>0.00000000 BTC</h4>
+                        <p><small>≈ $0</small></p>
+                    </div>
+                    <div class="col" style="margin-top: 1%;">
+                        <p>Total Interest Earned</p>
+                        <h4>0.00000000 BTC</h4>
+                        <p><small>≈ $0</small></p>
+                    </div>
+                    <div class="col" style="margin-top: 1%;">
+                        <p>Today's Interest Earned</p>
+                        <h4>0.00000000 BTC</h4>
+                        <p><small>≈ $0</small></p>
+                    </div>
+                    <div class="col" style="margin-top: 1%;">
+                        <p>Savings Trial Fund Bonus</p>
+                        <h4>0.00000000 BTC</h4>
+                        <p><small>≈ $0</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-light" style="margin-left: 0%; margin-top: 2%; margin-bottom: 2%; margin-right: 0%;">
+                <div style="margin-left: 2%;">
+                    <a class="col btn btn-sm btn-warning" href="#" role="button"
+                       style="border-color: black; margin-top: 2%;">Flexible</a>
+                    <a class="col btn btn-sm btn-light" id="section-link7" href="#" role="button"
+                       style="border-color: black; margin-top: 2%;">Locked</a>
+                    <a class="col btn btn-sm btn-light" id="section-link8" href="#" role="button"
+                       style="border-color: black; margin-top: 2%;">Activities</a>
+                    <a class="col btn btn-sm btn-light" id="section-link9" href="#" role="button"
+                       style="border-color: black; margin-top: 2%;">Savings Trial Fund</a>
+                </div>
+                <hr style="margin-left: 2%; margin-right: 2%;">
+
+                <div class="table-responsive">
+                    <table class="table" style="margin-left: 2%;">
+                        <thead class="table" style="background-color: #f2f2f2;">
+                        <tr>
+                            <th scope="col" style="width: 5%;">Flexible Savings</th>
+                            <th scope="col" style="width: 5%;">Auto Transfer</th>
+                            <th scope="col" style="width: 5%;">Total Amount</th>
+                            <th scope="col" style="width: 5%;">Accruing interest</th>
+                            <th scope="col" style="width: 5%;">Today's Subscription</th>
+                            <th scope="col" style="width: 5%;">Redeeming</th>
+                            <th scope="col" style="width: 5%;">Cumulative Interest</th>
+                            <th scope="col" style="width: 5%;">Estimated Annual Yield</th>
+                            <th scope="col" style="width: 5%;">Operation</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- backend -->
+                        </tbody>
+                    </table>
+                </div>
+                <div style="text-align: center;" class="bg-light">
+                    <img src="{% static '/assets/img/info.png' %}" style="width: 140px;">
+                    <p>No records found.</p>
+                    <div style="height: 50px;"></div>
+                </div>
+            </div>
+
+
+            <!-- <h5 style="margin-left: 5%; margin-top: 2%">Two-Factor Authentication (2FA)</h5> -->
+        </div>
+
+    </div>
+</div>
+{% endblock %}

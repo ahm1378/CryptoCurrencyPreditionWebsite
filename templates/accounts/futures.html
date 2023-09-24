@@ -1,0 +1,51 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row d-flex flex-wrap">
+        {% include 'left_navbar2.html' %}
+        <div class="col" style="background-color: #e8e8e8;">
+            <h1 style="margin-top: 10px; margin-left: 2%">Futures</h1>
+
+            <hr style="margin-left: 20px">
+            <div style="background-color: #ebe0bc; height: auto;">
+                <div class="">
+                    <div class="col-10 py-3" style="margin-top: 1%; margin-left: 2%;">
+                        <h6><small>You are required to complete Intermediate Verification to access Binance services.
+                            Plus, verify now and get a 500 BUSD Savings Trial Fund Voucher.<a href="#"
+                                                                                              style="margin-left: 10px; color: #cc9c35">Learn
+                                more</a></small></h6>
+                    </div>
+                    <div class="col py-3" style="margin-top: 0%; text-align: center;">
+                        <a class="btn btn-warning" href="#" role="button"> Open Now </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 10px; height: auto;" class="row bg-light">
+                <div class="row">
+                    <div class="col" style="margin-top: 2%; text-align: center;">
+                        <img src="{% static '/assets/img/info.png' %}" style="width: 150px; margin-bottom: 0.5%;">
+                        <h3 style="margin-left: 0%;">Open Futures Account</h3>
+                        <a href="#" style="text-align: center; color: #cc9c35; font-size: 14px;">Click to see Futures
+                            Trading Guide</a>
+                        <p style="margin-top: 2%; margin-left: 8%; margin-right: 8%;">Futures trading is a highly risky
+                            endeavor, with the potential for both great profits and significant losses. Please be aware
+                            that in the event of extreme price movement, there is a chance that all margin balance in
+                            your futures wallet may be liquidated. Futures trading is restricted for users from certain
+                            regions.</p>
+
+                        <div class="form-group" style="margin-left: 13%; margin-right: 13%;">
+                            <input type="text" class="form-control" id="inputCode"
+                                   placeholder="Futures referral code (Optional)">
+                        </div>
+                        <div style="margin-top: 2%; margin-bottom: 3%;">
+                            <a class="btn btn-warning" href="#" role="button"> Open Now </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

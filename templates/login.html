@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+      .navbar{
+        margin-bottom:0;
+        border-radius:0;
+      }
+
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: #d6a80f"><b>BINANCE</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="menu"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Language
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dlabel">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Farsi</a></li>
+                    </ul>
+                </li>
+        </div>
+    </div>
+</nav>
+
+<div style="background-color: #f5e8ba; color: #f5e8ba; margin-bottom: 4%; height: 40px"><h2></h2></div>
+<div style="margin-left: 25%">
+    <h2>Binance Account Login</h2>
+    <p style="margin-bottom: 35px; margin-top: 15px">Welcome back! Log In with your Email or Phone number</p>
+
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-warning" for="btnradio1" style="margin-right: 20px; border: none; color: black">Email</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-warning" for="btnradio2" style="border: none; color: black;">Mobile</label>
+    </div>
+
+    <form>
+        <div class="form-group" style="margin-top: 25px">
+            <label>Email</label>
+            <input type="Email" class="form-control"
+                   style="width: 35%; height: 50px; margin-top: 5px; margin-bottom: 20px" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control"
+                   style="width: 35%;  height: 50px; margin-top: 5px; margin-bottom: 25px;" required>
+        </div>
+
+        <button type="submit" , class="btn btn-default"
+                style="background-color: #ffd333; width: 35%; height: 50px; margin-bottom: 20px">Log In
+        </button>
+    </form>
+    <a href="#" style="text-decoration: none; color: #d6a80f; font-size: 15px;"><b>Forgot password?</b></a>
+    <div style="margin-top: 7px">
+        <a href="#" style="text-decoration: none; color: #d6a80f; font-size: 15px"><b>Register now</b></a>
+    </div>
+</div>
+
+<div>
+    <p style="text-align: center; margin-top: 3.1%;font-size: 14px"><small>© 2017 - 2021 Binance.com. All rights
+        reserved</small></p>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        {% include 'left_navbar1.html' %}
+        <div class="col py-3 bg-white">
+            <div class="row bg-light">
+                <div class="col-4">
+                    <br>
+                    <h3 class="text-dark text-center-left">Reward Center</h3>
+                </div>
+                <div class="col-8">
+                    <img class="mx-auto d-block" src="{% static '/assets/img/reward-light.svg' %}">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="text-gray">Voucher Type</p>
+                        <select class="form-select bg-white">
+
+                            <option class="selected">All(0)</option>
+                            <option value="1">Bonus Voucher</option>
+                            <option value="2">Cashback Voucher</option>
+                            <option value="3">Trial Fund</option>
+                            <option value="4">VIP Upgrade</option>
+                            <option value="5">Cash Voucher</option>
+                            <option value="6">0% Interest Voucher</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-3">
+
+                        <p class="text-gray">Status</p>
+                        <select class="form-select bg-white">
+                            <option class="selected">All</option>
+                            <option value="1">Available</option>
+                            <option value="2">Redeemed</option>
+                            <option value="3">Expired</option>
+                            <option value="4">Invalid</option>
+                        </select>
+
+                    </div>
+
+                    <div class="col-3">
+                        <p class="text-gray">Order By</p>
+                        <select class="form-select bg-white">
+                            <option class="selected">Received Date Latest to Earliest</option>
+                            <option value="1">Received Date Earliest to Latest</option>
+                        </select>
+                    </div>
+
+
+                    <div class="col-3">
+                        <p style="visibility:hidden;">asd</p>
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#voucherModal"
+                                style="margin-left: 1em"><i class="fs-5 bi-card-checklist icon-gray"></i>Voucher Code
+                        </button>
+                        <div class="modal fade" id="voucherModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="fs-8">Enter the code</p>
+                                        <input class="form-control">
+                                        <div class="form-text text-gray">Each code can be only redeemed once per user.
+                                            Once redeemed, the reward cannot be reversed.
+                                        </div>
+                                        <br>
+                                        <h5>Redeem History</h5>
+                                        <p class="text-gray">No redeem history yet</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Claim
+                                            Voucher
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <p class="text-gray">Enjoy special bonus and rewards with Binance vouchers. How to redeem a voucher?
+                        <a href="#" style="color: gold; text-decoration: underline;"> Learn more.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

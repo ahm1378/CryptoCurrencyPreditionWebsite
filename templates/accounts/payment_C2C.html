@@ -1,0 +1,42 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        {% include 'left_navbar1.html' %}
+        <div class="col py-3 bg-light">
+            <h2 class="payment_h2">Payment</h2>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group"
+                 style="margin-top: 15px; margin-left: 20px">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-warning text-black" for="btnradio1"
+                       style="margin-right: 20px; border: none;">P2P</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn-link" for="btnradio2"
+                       style="margin-right: 20px; border: none; margin-top: 5px; text-decoration: none;">
+                    <a href="/payment/bc" class="text-black" style="text-decoration: none;">Buy Crypto</a>
+                </label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+                       style="text-decoration: none;">
+                <label class="btn-link" for="btnradio3"
+                       style="border: none; text-decoration: none; margin-top: 5px"><a
+                        href="/payment/wd" class="text-black" style="text-decoration: none;">Withdraw</a></label>
+            </div>
+            <hr style="margin-left: 20px">
+
+            <!-- <p class="col-md-7 col-sm-7 col-xs-7" style="margin-left: 20px; display: inline-block; margin-left: 40px">P2P payment methods: When you sell cryptocurrencies, the payment method added will be displayed to buyer as options to accept payment, please ensure that the account owner’s name is consistent with your verified name on Binance. You can add up to 20 payment methods.</p> -->
+            <div class="col-md-7" style="text-align: left; margin-left: 20px; display: inline-block;">
+                P2P payment methods: When you sell cryptocurrencies, the payment method added will be displayed to buyer
+                as options to accept payment, please ensure that the account owner’s name is consistent with your
+                verified name on Binance. You can add up to 20 payment methods.
+            </div>
+            <button class="btn btn-outline bg-warning" type="button" id="button-addon1"
+                    style="border-style: none; margin-left: 20%; margin-bottom: 4%"><a href="#" class="text-black"
+                                                                                       style="text-decoration: none;">+
+                Add a payment method</a></button>
+        </div>
+    </div>
+</div>
+{% endblock %}

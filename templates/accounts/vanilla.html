@@ -1,0 +1,66 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row d-flex flex-wrap">
+        {% include 'left_navbar2.html' %}
+        <div class="col py-3 container-fluid" style="background-color: #e8e8e8;">
+            <div class="row" style="height: auto; background-color: white;">
+                <div class="col" style="margin-top: 1%; text-align: left;">
+                    <h3>Vanilla Options <a class="btn btn-sm" href="#" role="button" style="border-color: black">Hide
+                        Balance</a></h3>
+                </div>
+                <div class="col" style="margin-top: 1.2%; text-align: right;">
+                    <a class="btn btn-sm" href="#" role="button" style="border-color: black">Transfer</a>
+                    <a href="#" style="margin-left: 5%; color: #c77b00">Hide Balance</a>
+                </div>
+            </div>
+
+            <div style="background-color: white; height: auto; margin-top: 2%;">
+                <div class="row">
+                    <div class="col" style="margin-left: 1%;">
+                        <p>Equity</p>
+                        <h6>-- USDT</h6>
+                    </div>
+                    <div class="col">
+                        <p>Margin Balance</p>
+                        <h6>-- USDT</h6>
+                    </div>
+                    <div class="col" style="margin-right: 1%;">
+                        <p>Unrealised PNL</p>
+                        <h6>-- USDT</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-color: white; height: auto; margin-top: 2%;">
+                <h5 style="margin-left: 2%;">Asset</h5>
+                <div class="table-responsive" style="margin-left: 2%; margin-right: 2%;">
+                    <table class="table table-hover bg-light" style="margin-bottom: 35%;">
+                        <thead>
+                        <tr>
+                            <th scope="col" style="font-size: 12px;">Asset</th>
+                            <th scope="col" style="font-size: 12px;">Margin Balance</th>
+                            <th scope="col" style="font-size: 12px;">Unrealised PNL</th>
+                            <th scope="col" style="font-size: 12px;">Available</th>
+                            <th scope="col" style="font-size: 12px;">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row"><span><img src="{% static '/assets/img/bitcoin-btc-logo.svg' %}"
+                                                       style="width: 20px; margin-right: 2%; margin-top: -1.5%;"></span>USDT
+                            </th>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td><a href="#" style="text-decoration: none; color: #c77b00">Transfer</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

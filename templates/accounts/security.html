@@ -1,0 +1,208 @@
+{% extends 'base_black.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        {% include 'left_navbar1.html' %}
+        <div class="col bg-light" style=" height: auto;">
+            <h1 style="margin-left: 5%; margin-bottom: 2%; margin-top: 2%">Security</h1>
+            <div class="row">
+                <a class="link-1 col" href="#" style="margin-left: 5%;">Two-Factor Authentication (2FA)</a>
+                <a class="link-1 col" href="#" style="margin-left: 5%;">Identity Verification</a>
+                <a class="link-1 col" href="#">Anti-Phishing Code</a>
+                <a class="link-1 col" href="#">Withdraw Whitelist</a>
+            </div>
+            <hr>
+            <div class="row" style="background-color: #ebe0bc; margin-left: 5%; margin-right: 5%">
+                <h6 class="col-8" style="margin-top: 10px; margin-bottom: 15px"><small>To increase your account
+                    security, it is recommended that you enable 2FA, including Binance/Google authenticator.</small>
+                </h6>
+                <a class="col" href="#" style="text-decoration: none; color: #cc9c35"><h6
+                        style="margin-top: 10px; margin-bottom: 15px;"><small>Enable Binance/Google Authenticator Now
+                    ></small></h6></a>
+            </div>
+            <!-- <h5 style="margin-left: 5%; margin-top: 2%">Two-Factor Authentication (2FA)</h5> -->
+            <div class="row" style="margin-left: 3%">
+                <h5 style="margin-left: 0%; margin-top: 2%; margin-bottom: 2%;">Two-Factor Authentication (2FA)</h5>
+                <div class="col-md-5">
+                    <h6 style="margin-left: 7%; margin-top: 2%">Security Key</h6>
+                    <h6 style="margin-left: 7%; color: #787878; font-size: 14px">Protect your account with a security
+                        key (e.g. Yubikey).</h6>
+                </div>
+
+                <div class="col-md-3">
+                    <h6 style="margin-left: 10%; margin-top: 5%"><small>Unset(backend)</small></h6>
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning"
+                            style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                style="text-decoration: none; color: black">Enable</a>
+                    </button>
+                </div>
+
+                <hr style="margin-top: 1%;">
+
+                <div class="col-md-5">
+                    <h6 style="margin-left: 7%; margin-top: 2%">Binance/Google Authenticator (Recommended)</h6>
+                    <h6 style="margin-left: 7%; color: #787878; font-size: 14px">Protect your account and
+                        transactions.</h6>
+                    <a style="margin-left: 7%; color: #cc9c35;" href="#">Having trouble?</a>
+                </div>
+
+                <div class="col-md-3">
+                    <h6 style="margin-left: 10%; margin-top: 5%"><small>Unset(backend)</small></h6>
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning"
+                            style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                style="text-decoration: none; color: black">Enable</a>
+                    </button>
+                </div>
+
+                <hr style="margin-top: 1%;">
+
+                <div class="col-md-5">
+                    <h6 style="margin-left: 7%; margin-top: 2%">Phone Number Verification</h6>
+                    <h6 style="margin-left: 7%; color: #787878; font-size: 14px">Protect your account and
+                        transactions.</h6>
+                </div>
+
+                <div class="col-md-3">
+                    <h6 style="margin-left: 10%; margin-top: 5%"><small>Unset(backend)</small></h6>
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning"
+                            style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                style="text-decoration: none; color: black">Enable</a>
+                    </button>
+                </div>
+
+                <hr style="margin-top: 1%">
+
+                <div class="col-md-5">
+                    <h6 style="margin-left: 7%; margin-top: 2%">Email Address Verification</h6>
+                    <h6 style="margin-left: 7%; color: #787878; font-size: 14px">Protect your account and
+                        transactions.</h6>
+                </div>
+
+                <div class="col-md-3">
+                    <h6 style="margin-left: 10%; margin-top: 5%"><small>Email address(backend)</small></h6>
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning"
+                            style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                style="text-decoration: none; color: black">Change</a>
+                    </button>
+                    <button type="button" class="btn btn-outline-warning"
+                            style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                style="text-decoration: none; color: black">Remove</a>
+                    </button>
+                </div>
+
+                <hr style="margin-top: 1%;">
+
+                <h5 style="margin-top: 2%; margin-bottom: 2%;">Advanced Security</h5>
+                <div class="col-md-5">
+                    <h6 style="margin-left: 7%; margin-top: 2%">Login Password</h6>
+                    <h6 style="margin-left: 7%; color: #787878; font-size: 14px">Login password is used to log in to
+                        your account.</h6>
+                </div>
+
+                <div class="col-md-3">
+                    <h6 style="margin-left: 10%; margin-top: 5%"><small></small></h6>
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning"
+                            style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                style="text-decoration: none; color: black">Change</a>
+                    </button>
+                </div>
+
+                <hr style="margin-top: 1%;">
+                <div class="col-md-5">
+                    <h6 style="margin-left: 7%; margin-top: 2%">Withdrawal Whitelist</h6>
+                    <h6 style="margin-left: 7%; color: #787878; font-size: 14px">When this function is turned on, your
+                        account will only be able to withdraw to whitelisted withdrawal addresses.</h6>
+                    <a style="margin-left: 7%; color: #cc9c35;" href="#">Address Management</a>
+                </div>
+
+                <div class="col-md-3">
+                    <h6 style="margin-left: 10%; margin-top: 5%"><small>OFF(backend)</small></h6>
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning"
+                            style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                style="text-decoration: none; color: black">Enable</a>
+                    </button>
+                </div>
+
+                <hr style="margin-top: 1%;">
+
+                <div class="col-md-5">
+                    <h6 style="margin-left: 7%; margin-top: 2%">Anti-Phishing Code</h6>
+                    <h6 style="margin-left: 7%; color: #787878; font-size: 14px">Protect your account from phishing
+                        attempts and ensure that your notification emails are from Binance only.</h6>
+                </div>
+
+                <div class="col-md-3">
+                    <h6 style="margin-left: 10%; margin-top: 5%"><small>OFF(backend)</small></h6>
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning"
+                            style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                style="text-decoration: none; color: black">Enable</a>
+                    </button>
+                </div>
+
+                <hr style="margin-top: 1%;">
+                <h5 style="margin-top: 3%;">Devices and Activities</h5>
+
+                <div class="col-md-5">
+                    <h6 style="margin-left: 7%; margin-top: 2%">Device Management</h6>
+                    <h6 style="margin-left: 7%; color: #787878; font-size: 14px">Manage devices allowed to access your
+                        account.</h6>
+                </div>
+
+                <div class="col-md-3">
+                    <h6 style="margin-left: 10%; margin-top: 5%"><small></small></h6>
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning"
+                            style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                style="text-decoration: none; color: black">Manage</a>
+                    </button>
+                </div>
+
+                <hr style="margin-top: 1%;">
+                <div class="col-md-5">
+                    <h6 style="margin-left: 7%; margin-top: 2%">Account Activity</h6>
+                    <h6 style="margin-left: 7%; color: #787878; font-size: 14px">Last login (Backend</h6>
+                    <h6 style="margin-left: 7%; color: #787878; font-size: 14px">Suspicious account activity? <a
+                            href="#" style="color: #cc9c35">Disable account</a></h6>
+                </div>
+
+                <div class="col-md-3">
+                    <h6 style="margin-left: 10%; margin-top: 5%"><small></small></h6>
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning"
+                            style="text-decoration: none; margin-top: 2%; margin-left: 35%;"><a href="#"
+                                                                                                style="text-decoration: none; color: black">More</a>
+                    </button>
+                </div>
+                <hr style="margin-top: 1%; margin-bottom: 7%;">
+
+            </div> <!-- end -->
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,185 @@
+{% load static %}
+<header>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark" aria-label="Navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="{% static '/assets/img/bitcoin-btc-logo.svg' %}"
+                                                  width="40px"
+                                                  alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
+                    aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbars">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                           aria-expanded="false"><img src="{% static '/assets/img/grid-3x3-gap-fill.svg' %}"
+                                                      width="20px" alt="" style="background-color: white"></a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item text-white" href="#">Exchange</a></li>
+                            <li><a class="dropdown-item text-white" href="#">AInstitutional Services</a></li>
+                            <li><a class="dropdown-item text-white" href="#">DEX</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Research</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Academy</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Charity</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Labs</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Trust Wallet</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Broker</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Cloud</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Launchpad</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown02"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">Buy Crypto <span
+                                class="badge rounded-pill bg-warning text-dark">EUR</span> </a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown02">
+                            <li><a class="dropdown-item text-white" href="#">Card Deposit</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Credit/Debit Card</a></li>
+                            <li><a class="dropdown-item text-white" href="#">P2P Trading</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Cash Balance</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Third-party Payment</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Market</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown03"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">Trade</a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown03">
+                            <li><a class="dropdown-item text-white" href="/convert">Convert</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Classic</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Advanced</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Margin</a></li>
+                            <li><a class="dropdown-item text-white" href="#">P2P</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Stock Token</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown04"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">Derivatives</a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown04">
+                            <li><a class="dropdown-item text-white" href="#">Binance Futures Overview</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Responsible Trading</a></li>
+                            <li><a class="dropdown-item text-white" href="#">USD-M Futures</a></li>
+                            <li><a class="dropdown-item text-white" href="#">COIN-M Futures</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Vanilla Options</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Leveraged Tokens</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Battle</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown05"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">Finance</a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown05">
+                            <li><a class="dropdown-item text-white" href="#">Binance Earn</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Binance Pool</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Binance Visa Card</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Crypto Loans</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Liquid Swap</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Binance Pay</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">NFT <span
+                                class="badge rounded-pill bg-warning text-dark">New</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    {% if user.is_authenticated %}
+                    <li class="nav-item dropdown text-white">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown06" data-bs-toggle="dropdown"
+                           aria-expanded="false">Wallet</a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown06">
+                            <li><a class="dropdown-item text-white" href="/wallet">Overview</a></li>
+                            <li><a class="dropdown-item text-white" href="/spot">Fiat and Spot</a></li>
+                            <li><a class="dropdown-item text-white" href="/margin">Margin</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Futures</a></li>
+                            <li><a class="dropdown-item text-white" href="#">P2P</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Earn</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Pool</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Funding Wallet</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Vanilla Options</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Transaction History</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown07" data-bs-toggle="dropdown"
+                           aria-expanded="false">Orders</a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown07">
+                            <li><a class="dropdown-item text-white" href="#">Spot Order</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Margin Order</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Futures Order</a></li>
+                            <li><a class="dropdown-item text-white" href="#">P2P Order</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Earn History</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Buy Crypto History</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Loan History</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Convert History</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Launchpad History</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown08" data-bs-toggle="dropdown"
+                           aria-expanded="false"><img class="bg-white" style="border-radius:50%" src="{% static '/assets/img/person.svg' %}"
+                                                      width="20px" alt=""></a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown08">
+                            <li><a class="dropdown-item text-white" href="/dashboard">Dashboard</a></li>
+                            <li><a class="dropdown-item text-white" href="/wallet">Wallet</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Orders</a></li>
+                            <li><a class="dropdown-item text-white" href="/security">Security</a></li>
+                            <li><a class="dropdown-item text-white" href="/profile">Identification</a></li>
+                            <li><a class="dropdown-item text-white" href="/coupon">Reward Center</a></li>
+                            <li><a class="dropdown-item text-white" href="/referral">Referral</a></li>
+                            <li><a class="dropdown-item text-white" href="/tasks">Task Center</a></li>
+                            <li><a class="dropdown-item text-white" href="/api-management">API Management</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Notification</a></li>
+                            <li><a class="dropdown-item text-white" href="/logout">Logout</a></li>
+                        </ul>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">
+                            Log In
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/register" class="btn btn-warning">
+                            Register
+                        </a>
+                    </li>
+                    {% endif %}
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            Download
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            English
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            USD
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
