@@ -78,9 +78,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'cryptomarket',
-        'PASSWORD': '13781383Aa',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
-        "USER": 'ahm1378',
+        "USER": '7893',
         "PORT": "5432"
     }
 }
